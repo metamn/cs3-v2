@@ -1,0 +1,44 @@
+
+// Responsive grid
+// ---------------
+
+
+// Line height and text width for mobile 
+$lem: 1.25em !global;
+$text-width: $lem * 15 !global;
+
+// Line height and text width for laptop
+@include laptop-and-up { 
+  $lem: 1.56em !global;
+  $text-width: $lem * 15 !global;
+}
+
+// Line height and text width for desktop
+@include desktop-and-up { 
+  $lem: 1.56em !global;
+  $text-width: $lem * 15 !global;
+}
+
+
+
+// Responsive font sizes and line heights
+// --------------------------------------
+  
+@mixin responsive-typography { 
+  // Font size for mobile
+  @include mobile { 
+    font-size: 100%;
+    line-height: 1.56;
+  }
+  
+  // Font size for tablets and laptops 
+    font-size: 125%;
+    line-height: 1.56;
+  
+  // Font size for desktops
+  @include desktop-and-up { 
+    font-size: 150%;
+    line-height: 1.56;
+  }
+  
+}

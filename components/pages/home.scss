@@ -9,11 +9,5 @@
 
 
 body {
-  background: lightblue;
-
-  @include footer;
-
-  @include mobile {
-    background: red;
-  }
+  
 }

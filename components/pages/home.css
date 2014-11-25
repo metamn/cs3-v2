@@ -17,5 +17,3 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* No files to import found in ../molecules/**\/* */
 /* No files to import found in ../organisms/**\/* */
-body { background: lightblue; width: 10%; }
-@media only screen and (max-width: 37.499em) { body { background: red; } }
