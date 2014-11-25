@@ -1,0 +1,43 @@
+---
+title: Breakpoints
+description: The breakpoints used for responsive layouts
+breakpoints:
+  - name: "$breakpoint-mobile"
+    description: Screens with less than 600px width
+    value: "37.5em"
+  - name: "$breakpoint-laptop"
+    description: Screens starting with 1024px width
+    value: "64em"
+  - name: "$breakpoint-desktop"
+    description: Screens with more than 1440px width
+    value: "90em"
+mixins:
+  - name: "mobile"
+    description: Mobile devices in both portrait and landscape mode
+    value: "(max-width: $breakpoint-mobile - 0.001)"
+  - name: "tablet"
+    description: Tablets in both portrait and landscape mode
+    value: "(min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop - 0.001)"
+  - name: "below-laptop"
+    description: Mobile and tablet devices in both portrait and landscape mode
+    value: "(max-width: $breakpoint-laptop - 0.001)"
+  - name: "laptop-and-up"
+    description: Everything above 1024px
+    value: "(min-width: $breakpoint-laptop)"
+  - name: "desktop-and-up"
+    description: For large screens above 1440px
+    value: "(min-width: $breakpoint-desktop)"
+---
+
+{% for item in breakpoints %}
+{{ item.name }}: {{ item.value }}; // {{ item.description }}
+{%- endfor %}
+
+{% for item in mixins %}
+// {{ item.description }}
+@mixin {{ item.name }} {
+  @media only screen and {{ item.value }} {
+    @content
+  }
+}
+{% endfor %}

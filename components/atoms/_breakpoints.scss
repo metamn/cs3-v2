@@ -1,0 +1,42 @@
+
+
+$breakpoint-mobile: 37.5em; // Screens with less than 600px width
+$breakpoint-laptop: 64em; // Screens starting with 1024px width
+$breakpoint-desktop: 90em; // Screens with more than 1440px width
+
+
+// Mobile devices in both portrait and landscape mode
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile - 0.001) {
+    @content
+  }
+}
+
+// Tablets in both portrait and landscape mode
+@mixin tablet {
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop - 0.001) {
+    @content
+  }
+}
+
+// Mobile and tablet devices in both portrait and landscape mode
+@mixin below-laptop {
+  @media only screen and (max-width: $breakpoint-laptop - 0.001) {
+    @content
+  }
+}
+
+// Everything above 1024px
+@mixin laptop-and-up {
+  @media only screen and (min-width: $breakpoint-laptop) {
+    @content
+  }
+}
+
+// For large screens above 1440px
+@mixin desktop-and-up {
+  @media only screen and (min-width: $breakpoint-desktop) {
+    @content
+  }
+}
+
