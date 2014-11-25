@@ -1,5 +1,5 @@
-{% import "../atoms/macros/classname.swig" as headClass  %}
-{% set classname = headClass.classname(title) %}
+{% import "../atoms/macros/classname.swig" as c  %}
+{% set classname = c.classname(title) %}
 
 <html lang="en" class="{{ classname }}">
   <head>

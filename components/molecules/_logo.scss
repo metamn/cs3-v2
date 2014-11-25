@@ -1,0 +1,9 @@
+@mixin logo {
+  .square {
+    @include square;
+  }
+
+  h1 {
+    @include font(logo);
+  }
+}
