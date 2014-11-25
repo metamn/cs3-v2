@@ -9,11 +9,14 @@
 
     <title>Home</title>
 
+    <link href="/assets/styles/home.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
     <!-- Typekit -->
     <script src="//use.typekit.net/qiy3lwz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
-    <link href="/assets/styles/home.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
   </head>
 
   <body>
@@ -32,6 +35,26 @@
 </div>
 
 </header>
+
+
+
+  
+
+  <figure>
+    <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source media="(min-width: 90em)" srcset="/assets/images/onestop-tablet-angle-4x.png">
+      <source media="(min-width: 64em)" srcset="/assets/images/onestop-tablet-angle-3x.png">
+      <source media="(min-width: 37.5em)" srcset="/assets/images/onestop-tablet-angle-3x.png">
+      <source srcset="/assets/images/onestop-tablet-angle-2x.png">
+      <!--[if IE 9]></video><![endif]-->
+
+      <img src="/assets/images/onestop-tablet-angle-2x.png" alt="Featured image">
+    </picture>
+    <figcaption>Featured image</figcaption>
+  </figure>
+</section>
+
 
 
 <!-- jQuery from CDN -->

@@ -14,7 +14,17 @@ body {
   @include font;
   @include colors;
 
+  section, article, aside, nav {
+    > h3 {
+      display: none;
+    }
+  }
+
   header {
     @include header;
+  }
+
+  #featured-image {
+    @include featured-image;
   }
 }

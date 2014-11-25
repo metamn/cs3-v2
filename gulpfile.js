@@ -25,6 +25,8 @@ var paths = {
   yaml: 'components/**/*.yml',
   styles: 'site/assets/styles',
   scripts: 'site/assets/scripts',
+  assets_src: 'assets/**/*',
+  assets_dest: 'site/assets',
   pages: 'components/pages/*.html',
   site: 'site',
   home: 'site/home',
@@ -75,6 +77,14 @@ gulp.task('scripts', function() {
 });
 
 
+// Assets
+// - moves all assets from assets/ to site/assets/
+gulp.task('assets', function() {
+  return gulp.src(paths.assets_src)
+    .pipe(gulp.dest(paths.assets_dest));
+});
+
+
 // Pages
 // - compacting pages
 // - ex: pages/home.html => home/index.html
@@ -121,6 +131,7 @@ gulp.task('default', function(cb) {
     'swig',
     'styles',
     'scripts',
+    'assets',
     'pages',
     'home',
     cb

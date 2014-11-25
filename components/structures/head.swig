@@ -8,11 +8,14 @@
 
     <title>{{ title }}</title>
 
+    <link href="/assets/styles/{{ classname }}.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
     <!-- Typekit -->
     <script src="//use.typekit.net/qiy3lwz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
-    <link href="/assets/styles/{{ classname }}.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
   </head>
 
   <body>
