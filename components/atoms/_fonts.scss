@@ -1,14 +1,18 @@
 
 // Font and type settings
-
+// - based on Montserrat and Europa (from Webkit)
 
 // Import Montserrat from Google
 @import url(http://fonts.googleapis.com/css?family=Montserrat|700);
 
 
-// A global mixin for all typesettings
+// A global mixin for all types
 @mixin font($type: body) {
   @if ($type == body) {
     @include font-body;
+  }
+
+  @if ($type == logo) {
+    @include font-logo;
   }
 }

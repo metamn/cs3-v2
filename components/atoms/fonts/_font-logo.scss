@@ -1,0 +1,7 @@
+@mixin font-logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: $heading-level-1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
