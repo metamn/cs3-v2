@@ -1,0 +1,8 @@
+// Links
+// - styling hyperlinks
+
+@mixin link($type: invisible) {
+  @if ($type == invisible ) {
+    @include link-invisible;
+  }
+}

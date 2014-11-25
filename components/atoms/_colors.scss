@@ -1,0 +1,22 @@
+// Colors
+// - colors don't come along but on a background
+
+// Color codes
+$white: hsla(0, 0, 97.5%, 1);
+$black: hsla(0, 0%, 10%, 1);
+$red: hsla(0, 100%, 50%, 1);
+$gray: hsla(0, 0%, 40%, 1);
+
+
+// Color pairs
+@mixin colors($scheme: black-on-white) {
+  @if ($scheme == black-on-white) {
+    color: $black;
+    background-color: $white;
+  }
+
+  @if ($scheme == white-on-black) {
+    color: $white;
+    background-color: $black;
+  } 
+}
