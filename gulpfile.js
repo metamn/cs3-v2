@@ -26,36 +26,12 @@ var paths = {
   styles: 'site/assets/styles',
   scripts: 'site/assets/scripts',
   pages: 'components/pages/*.html',
-  styleguide: 'components/pages/styleguide/**/*.html',
   site: 'site',
   home: 'site/home',
-  watch: ['components/**/*.{yml,swig}', 'components/pages/*.{js,css}']
+  watch: ['components/**/*.swig', 'components/pages/*.{js,css}']
 };
 
 
-
-// YAML
-// - compile an .yml file to .scss
-// - YAML files are definitions of basic Styleguide elements like colors, breakpoints, fonts etc.
-gulp.task('yaml', function() {
-  return gulp.src(paths.yaml)
-    .pipe(data(function(file) {
-      var content = fm(String(file.contents));
-      file.contents = new Buffer(content.body);
-      return content.attributes;
-    }))
-    .pipe(swig({
-      defaults: {
-        cache: false
-      }
-    }))
-    .pipe(rename(function(path) {
-      path.dirname = path.dirname.replace('pages/styleguide', '');
-      path.basename = '_' + path.basename;
-      path.extname = '.scss';
-    }))
-    .pipe(gulp.dest(paths.components));
-});
 
 
 // Swig
@@ -113,19 +89,6 @@ gulp.task('pages', function() {
 });
 
 
-// Styleguide
-// - compacting styleguide
-// - ex: styleguide/pages/home.html => styleguide/pages/home/index.html
-gulp.task('styleguide', function() {
-  return gulp.src(paths.styleguide)
-    .pipe(rename(function(path) {
-      path.dirname = '/styleguide/' + path.dirname + '/' + path.basename + '/';
-      path.basename = 'index';
-    }))
-    .pipe(gulp.dest(paths.site))
-  ;
-});
-
 
 // Home
 // - making a homepage from an existing page
@@ -156,11 +119,9 @@ gulp.task('default', function(cb) {
   runSequence(
     'clean',
     'swig',
-    'yaml',
     'styles',
     'scripts',
     'pages',
-    'styleguide',
     'home',
     cb
   );
