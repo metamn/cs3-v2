@@ -25,7 +25,7 @@ body {
   }
 
 
-  
+
 
   header {
     @include header;
@@ -33,5 +33,9 @@ body {
 
   #featured-image {
     @include featured-image;
+  }
+
+  #about {
+    @include about;
   }
 }

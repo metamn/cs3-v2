@@ -1,0 +1,15 @@
+@mixin about {
+  @include colors(white-on-black);
+
+  div {
+    padding: $lem;
+    max-width: $text-width;
+    font-size: $heading-level-1;
+
+    span {
+      color: $red;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
