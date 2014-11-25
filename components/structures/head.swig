@@ -8,6 +8,10 @@
 
     <title>{{ title }}</title>
 
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
     <link href="/assets/styles/{{ classname }}.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
   </head>
 

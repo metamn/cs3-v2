@@ -1,4 +1,6 @@
 
+// Responsive breakpoints and mixins
+// 
 
 $breakpoint-mobile: 37.5em; // Screens with less than 600px width
 $breakpoint-laptop: 64em; // Screens starting with 1024px width
@@ -39,4 +41,3 @@ $breakpoint-desktop: 90em; // Screens with more than 1440px width
     @content
   }
 }
-

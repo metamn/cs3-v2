@@ -18,6 +18,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* No files to import found in ../molecules/**\/* */
 /* No files to import found in ../organisms/**\/* */
-body { font-size: 125%; line-height: 1.56; }
+body { font-size: 125%; line-height: 1.56; font-family: "Europa", sans-serif; font-weight: 300; }
 @media only screen and (max-width: 37.499em) { body { font-size: 100%; line-height: 1.56; } }
 @media only screen and (min-width: 90em) { body { font-size: 150%; line-height: 1.56; } }

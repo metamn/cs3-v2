@@ -11,4 +11,5 @@
 body {
   @include responsive-grid-units;
   @include responsive-typography;
+  @include font;
 }
