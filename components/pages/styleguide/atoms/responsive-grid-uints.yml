@@ -1,0 +1,42 @@
+---
+title: Responsive grid units
+description: $lem is for padding and sizing common elements, $text-width is for sizing text blocks
+items:
+  - name: Mobile
+    description: Line height and text width for mobile
+    values:
+      - name: "$lem"
+        value: "1.25em !global"
+      - name: "$text-width"
+        value: "$lem * 15 !global"
+  - name: Laptop
+    description: Line height and text width for laptop
+    breakpoint: "laptop-and-up"
+    values:
+      - name: "$lem"
+        value: "1.56em !global"
+      - name: "$text-width"
+        value: "$lem * 15 !global"
+  - name: Desktop
+    description: Line height and text width for desktop
+    breakpoint: "desktop-and-up"
+    values:
+      - name: "$lem"
+        value: "1.56em !global"
+      - name: "$text-width"
+        value: "$lem * 15 !global"
+---
+
+// {{ title }}
+// - {{ description }}
+
+@mixin responsive-grid-units { {% for item in items %}{% if item.breakpoint %}
+  // {{ item.description }}
+  @include {{ item.breakpoint }} { {% for value in item.values %}
+    {{ value.name }}: {{ value.value }};{%- endfor %}
+  }
+  {% else %}
+  // {{ item.description }} {% for value in item.values %}
+    {{ value.name }}: {{ value.value }};{%- endfor %}
+  {% endif %}{% endfor %}
+}
