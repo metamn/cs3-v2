@@ -1,0 +1,5 @@
+@mixin flex($flex-grow, $flex-shrink, $flex-basis) {
+  @include flex-grow($flex-grow);
+  @include flex-shrink($flex-shrink);
+  @include flex-basis($flex-basis);
+}

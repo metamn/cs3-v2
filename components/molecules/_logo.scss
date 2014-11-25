@@ -1,6 +1,6 @@
 @mixin logo {
   .square {
-    @include square;
+    @include square($lem - $lem/3);
   }
 
   h1 {

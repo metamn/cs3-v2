@@ -1,0 +1,48 @@
+// A flexbox container with default settings
+// - all possible settings at http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+// - cross browser CSS at http://the-echoplex.net/flexyboxes
+// - SCSS mixins: - https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss
+//
+// Params:
+// - inline: 
+//    - true: the container will take only the space defined by it's content
+//    - false: the container will take the whole available space indifferenr of its content
+// - $direction: row (left-to-right)
+// - $wrap: nowrap (single line)
+@mixin flexbox($display: flex, $direction: null, $wrap: null, $justify-content: null, $align-items: null, $align-content: null) {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  
+  @if ($display == flex) {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  } @else {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+  } 
+  
+  @if ($direction) {
+    @include flexbox-direction($direction);
+  }
+  
+  @if ($wrap) {
+    @include flexbox-wrap($wrap);
+  }
+  
+  @if ($justify-content) {
+    @include flexbox-justify-content($justify-content);
+  }
+  
+  @if ($align-items) {
+    @include flexbox-align-items($align-items);
+  }
+  
+  @if ($align-content) {
+    @include flexbox-align-content($align-content);
+  }
+ }
+
+
+

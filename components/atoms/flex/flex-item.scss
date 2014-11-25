@@ -1,0 +1,8 @@
+// How items are aligned inside a flexbox
+// - https://github.com/mastastealth/sass-flex-mixin/blob/master/flex.scss
+
+@mixin flex-item($order: 0, $flex-grow: 0, $flex-shrink: 1, $flex-basis: auto, $align-self: auto) {
+  @include flex-order($order);
+  @include flex($flex-grow, $flex-shrink, $flex-basis);
+  @include flex-align-self($align-self);
+}
