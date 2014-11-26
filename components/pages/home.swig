@@ -39,10 +39,10 @@ images:
   - name: Smuff
     description: E-commerce
     url: smuff
-    mobile: smuff-product-tablet-portrait-1x.png
-    tablet: smuff-product-tablet-portrait-1x.png
-    laptop: smuff-product-tablet-portrait-1x.png
-    desktop: smuff-product-tablet-portrait-1x.png
+    mobile: smuff-portfolio-thumb2.png
+    tablet: smuff-portfolio-thumb2.png
+    laptop: smuff-portfolio-thumb2.png
+    desktop: smuff-portfolio-thumb2.png
 ---
 
 {% include "../structures/head.swig" %}
