@@ -1,7 +1,10 @@
 ---
 title: Home
 images:
-  - mobile: onestop-tablet-angle-2x.png
+  - name: Iorad
+    description: Pricing and checkout page design
+    url: iorad
+    mobile: onestop-tablet-angle-2x.png
     tablet: onestop-tablet-angle-3x.png
     laptop: onestop-tablet-angle-3x.png
     desktop: onestop-tablet-angle-4x.png
@@ -11,5 +14,6 @@ images:
 {% include "../structures/header.swig" %}
 
 {% include "../structures/about.swig" %}
+{% include "../structures/works.swig" %}
 
 {% include "../structures/footer.swig" %}
