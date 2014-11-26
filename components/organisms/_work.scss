@@ -1,47 +1,73 @@
 @mixin work {
-  @include flex-item($flex-basis: 50%);
   @include flexbox($justify-content: center, $align-items: center);
 
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+  @include flex-item($flex-basis: calc(50% - 1px));
+  border-right: 1px solid lighten($grey, 50%);
+  border-bottom: 1px solid lighten($grey, 50%);
 
-  &:hover {
-    -webkit-filter: none;
-    filter: none;
+  @include mobile {
+    @include flex-item($flex-basis: 100%);
+    border-right: none;
   }
 
+  overflow: hidden;
+  position: relative;
+  h3 {
+    display: inline-block;
+    position: absolute;
+    top: $lem/4;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+
+    font-size: 1500%;
+    word-wrap: break-word;
+    line-height: .5;
+    text-align: center;
+
+  }
 
   figure {
+    position: relative;
+
     padding: $lem;
+    @include mobile {
+      padding: $lem * 2;
+    }
 
     img {
       max-height: $text-width;
     }
   }
 
+
   &#iorad {
-    background: #84799a;
+    h3 {
+      color: hsla(220, 42%, 20%, .5);
+    }
   }
 
   &#occrp {
-    background: #a17ba7;
+    h3 {
+      color: hsla(0, 51%, 38%, .5);
+    }
   }
 
   &#anvelocom {
-    background: #C67B6C;
+    h3 {
+      color: hsla(2, 75%, 81%, 1);
+    }
   }
 
   &#scatter {
-    background: hsl(28, 35%, 58%);
-  }
-
-  &#inu-chivu {
-    background: hsl(43, 21%, 49%);
+    h3 {
+      color: hsla(203, 84%, 71%, .5);
+    }
   }
 
   &#smuff {
-    background: hsl(54, 35%, 58%);
+    h3 {
+      color: hsla(20, 92%, 53%, .5);
+    }
   }
 }
