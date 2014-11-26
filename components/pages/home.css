@@ -1,84 +1,32 @@
-/*
-Syntax error: Undefined mixin 'featured-image'.
-        on line 35 of /home/cs/work/cs3-v2/components/pages/home.scss, in `featured-image'
-        from line 35 of /home/cs/work/cs3-v2/components/pages/home.scss
+@import url(http://fonts.googleapis.com/css?family=Montserrat|700);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-30:   header {
-31:     @include header;
-32:   }
-33: 
-34:   #featured-image {
-35:     @include featured-image;
-36:   }
-37: 
-38:   #about {
-39:     @include about;
-40:   }
+html { line-height: 1; }
 
-Backtrace:
-/home/cs/work/cs3-v2/components/pages/home.scss:35:in `featured-image'
-/home/cs/work/cs3-v2/components/pages/home.scss:35
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/engine.rb:274:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:462:in `on_file_changed'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:324:in `block in watch'
-/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
-/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
-/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
-/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
-/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
-/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'featured-image'.\A         on line 35 of /home/cs/work/cs3-v2/components/pages/home.scss, in `featured-image'\A         from line 35 of /home/cs/work/cs3-v2/components/pages/home.scss\A \A 30:   header {\A 31:     @include header;\A 32:   }\A 33: \A 34:   #featured-image {\A 35:     @include featured-image;\A 36:   }\A 37: \A 38:   #about {\A 39:     @include about;\A 40:   }"; }
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* No files to import found in ../organisms/**\/* */
+body { font-size: 125%; line-height: 1.56; font-family: "Europa", sans-serif; font-weight: 300; color: #1a1a1a; background-color: #f9f9f9; }
+@media only screen and (max-width: 37.499em) { body { font-size: 100%; line-height: 1.56; } }
+@media only screen and (min-width: 90em) { body { font-size: 150%; line-height: 1.56; } }
+body section > h3, body article > h3, body aside > h3, body nav > h3 { display: none; }
+body figure img { max-width: 100%; height: auto; }
+body figure figcaption { display: none; }
+body header { padding: 1.56em 0 0 1.56em; }
+body header #logo .square { width: 1.04em; height: 1.04em; background: red; }
+body header #logo h1 { font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1.1px; }
+body header #logo h1 a { color: #1a1a1a; background-color: #f9f9f9; text-decoration: none; }
+body #about { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; color: #f9f9f9; background-color: #1a1a1a; margin: 1.56em 0; }
+body #about p { padding: 1.17em; max-width: 23.4em; font-size: 1.3077em; }
+body #about p span { color: red; font-weight: 400; font-style: italic; }
