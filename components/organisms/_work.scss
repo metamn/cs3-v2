@@ -1,14 +1,11 @@
 @mixin work {
   @include flexbox($align-items: center);
-  @include square($text-width/2, $grey);
   padding: $lem;
 
-  margin-right: 1px;
-  margin-bottom: 1px;
 
   figure {
     img {
-      max-height: $text-width/2;
+      max-height: $text-width / 2;
     }
   }
 }
