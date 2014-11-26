@@ -1,4 +1,3 @@
-{% import "../atoms/macros/button.swig" as b  %}
 
 <section id="about">
   <h3>About</h3>

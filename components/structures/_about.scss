@@ -1,5 +1,4 @@
 @mixin about {
-  @include flexbox($wrap: wrap, $justify-content: space-between, $align-items: center);
   @include colors(white-on-black);
   margin: $lem 0;
 

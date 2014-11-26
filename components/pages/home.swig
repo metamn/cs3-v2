@@ -10,7 +10,6 @@ images:
 {% include "../structures/head.swig" %}
 {% include "../structures/header.swig" %}
 
-
 {% include "../structures/about.swig" %}
 
 {% include "../structures/footer.swig" %}
