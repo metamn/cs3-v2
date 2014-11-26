@@ -28,6 +28,6 @@ body header #logo .square { width: 1.04em; height: 1.04em; background: red; }
 body header #logo h1 { font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1.1px; }
 body header #logo h1 a { color: #1a1a1a; background-color: #f9f9f9; text-decoration: none; }
 body #featured-image { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
-body #about { color: #f9f9f9; background-color: #1a1a1a; }
-body #about div { padding: 1.56em; max-width: 23.4em; font-size: 1.3077em; }
-body #about div span { color: red; font-weight: 400; font-style: italic; }
+body #about { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; color: #f9f9f9; background-color: #1a1a1a; margin: 1.56em 0; }
+body #about p { padding: 1.17em; max-width: 23.4em; font-size: 1.3077em; }
+body #about p span { color: red; font-weight: 400; font-style: italic; }

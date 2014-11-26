@@ -1,8 +1,10 @@
 @mixin about {
+  @include flexbox($wrap: wrap, $justify-content: space-between, $align-items: center);
   @include colors(white-on-black);
+  margin: $lem 0;
 
-  div {
-    padding: $lem;
+  p {
+    padding: $lem - $lem/4;
     max-width: $text-width;
     font-size: $heading-level-1;
 
