@@ -7,7 +7,7 @@ images:
     mobile: iorad-pricing-laptop-front-1x.png
     tablet: iorad-pricing-laptop-front-1x.png
     laptop: iorad-pricing-laptop-front-1x.png
-    desktop: iorad-pricing-laptop-front-1x.png
+    desktop: iorad-pricing-laptop-front-2x.png
   - name: OCCRP
     description: Website redesign
     url: occrp
@@ -28,14 +28,14 @@ images:
     mobile: scatter-frontpage-2-desktop-front-1x.png
     tablet: scatter-frontpage-2-desktop-front-1x.png
     laptop: scatter-frontpage-2-desktop-front-1x.png
-    desktop: scatter-frontpage-2-desktop-front-1x.png
+    desktop: scatter-frontpage-2-desktop-front-2x.png
   - name: Inu Chivu
     description: Artist portfolio
     url: inu
-    mobile: inu-menu-white-mobile-portrait-1x.png
-    tablet: inu-menu-white-mobile-portrait-1x.png
-    laptop: inu-menu-white-mobile-portrait-1x.png
-    desktop: inu-menu-white-mobile-portrait-1x.png
+    mobile: inu-portfolio-thumb.png
+    tablet: inu-portfolio-thumb.png
+    laptop: inu-portfolio-thumb.png
+    desktop: inu-portfolio-thumb.png
   - name: Smuff
     description: E-commerce
     url: smuff
