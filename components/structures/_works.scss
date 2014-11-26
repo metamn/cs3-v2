@@ -1,0 +1,7 @@
+@mixin works {
+  @include flexbox($wrap: wrap, $justify-content: space-between);
+
+  article {
+    @include work;
+  }
+}

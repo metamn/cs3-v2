@@ -6,6 +6,7 @@ $white: hsla(0, 0, 97.5%, 1);
 $black: hsla(0, 0%, 10%, 1);
 $red: hsla(0, 100%, 50%, 1);
 $gray: hsla(0, 0%, 40%, 1);
+$grey: $gray;
 
 
 // Color pairs
@@ -18,5 +19,5 @@ $gray: hsla(0, 0%, 40%, 1);
   @if ($scheme == white-on-black) {
     color: $white;
     background-color: $black;
-  } 
+  }
 }

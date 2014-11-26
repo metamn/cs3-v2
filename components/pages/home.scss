@@ -30,8 +30,12 @@ body {
   header {
     @include header;
   }
-  
+
   #about {
     @include about;
+  }
+
+  #works {
+    @include works;
   }
 }

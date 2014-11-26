@@ -3,5 +3,5 @@
 <article>
   <h3>{{ image.name }}</h3>
 
-  {{ f.figure(0, image.name) }}
+  {{ f.figure(loop.index0, image.name) }}
 </article>

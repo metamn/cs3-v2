@@ -1,0 +1,9 @@
+@mixin work {
+  @include square($text-width/2, $grey);
+  padding: $lem;
+
+  margin-right: 1px;
+  margin-bottom: 1px;
+  
+  overflow: hidden;
+}
