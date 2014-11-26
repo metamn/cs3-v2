@@ -1,6 +1,6 @@
 @mixin about {
   @include colors(white-on-black);
-  margin: $lem 0;
+  margin: $lem 0 0;
 
   p {
     padding: $lem - $lem/4;
