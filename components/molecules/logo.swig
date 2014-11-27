@@ -3,6 +3,6 @@
 <div id="logo">
   {% include "../atoms/square.swig" %}
   <h1>
-      {{ l.link("/", "It's Csongor", "It's Csongor") }}
+      {{ l.link(url, "It's Csongor", "It's Csongor") }}
   </h1>
 </div>
