@@ -12,13 +12,13 @@ params:
   <figure>
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
-      <source media="(min-width: 90em)" srcset="/assets/images/{{ image.desktop }}">
-      <source media="(min-width: 64em)" srcset="/assets/images/{{ image.laptop }}">
-      <source media="(min-width: 37.5em)" srcset="/assets/images/{{ image.tablet }}">
-      <source srcset="/assets/images/{{ image.mobile }}">
+      <source media="(min-width: 90em)" srcset="assets/images/{{ image.desktop }}">
+      <source media="(min-width: 64em)" srcset="assets/images/{{ image.laptop }}">
+      <source media="(min-width: 37.5em)" srcset="assets/images/{{ image.tablet }}">
+      <source srcset="assets/images/{{ image.mobile }}">
       <!--[if IE 9]></video><![endif]-->
 
-      <img src="/assets/images/{{ image.mobile }}" alt="{{ figcaption }}">
+      <img src="assets/images/{{ image.mobile }}" alt="{{ figcaption }}">
     </picture>
     <figcaption>{{ figcaption }}</figcaption>
   </figure>
