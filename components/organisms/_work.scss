@@ -1,26 +1,24 @@
 @mixin work {
-  @include flexbox($direction: column, $justify-content: center, $align-items: center);
+  @include flexbox($justify-content: center, $align-items: center);
 
   @include flex-item($flex-basis: 33.3%);
   //border-right: 1px solid ;
   //border-bottom: 1px solid ;
 
-  @include mobile {
+  @include below-laptop {
     @include flex-item($flex-basis: 100%);
     border-right: none;
   }
 
 
   figure {
-    padding: $lem $lem 0;
-    @include mobile {
-      padding: $lem * 2, $lem * 2 0;
+    padding: $lem;
+    @include below-laptop {
+      padding: $lem * 2;
     }
 
     img {
       max-height: $text-width / 1.5;
-      padding-bottom: $lem;
-      max-width: $text-width / 1.5;
     }
 
     figcaption {
@@ -43,20 +41,24 @@
   }
 
 
-  $iorad: lighten(hsl(220, 42%, 20%), 50%);
-  $scatter: #D3BF92;
+  // This is the iorad blue
+  $iorad: lighten(hsl(220, 42%, 20%), 65%);
+  // This comes from Kuler, derived from iorad blue, making sure fits a scatter base color (brownish)
+  //$scatter: #D3BF92;
 
+  // This is the scatter red
+  $scatter: lighten(hsl(203, 84%, 71%), 20%);
 
   &#iorad {
     background: $iorad;
   }
 
   &#occrp {
-    background: lighten($iorad, 5%);
+    background: lighten($iorad, 2.5%);
   }
 
   &#anvelocom {
-    background: lighten($iorad, 10%);
+    background: lighten($iorad, 5%);
   }
 
   &#scatter {
@@ -64,10 +66,10 @@
   }
 
   &#inu-chivu {
-    background: lighten($scatter, 5%);
+    background: lighten($scatter, 2.5%);
   }
 
   &#smuff {
-    background: lighten($scatter, 10%);
+    background: lighten($scatter, 5%);
   }
 }
