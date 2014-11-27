@@ -1,7 +1,7 @@
 ---
 title: Home
-#url: http://metamn.github.io/cs3-v2
-url: /
+url: http://metamn.github.io/cs3-v2
+#url: /
 images:
   - name: Iorad
     description: Pricing and checkout page design
