@@ -43,29 +43,31 @@
   }
 
 
+  $iorad: lighten(hsl(220, 42%, 20%), 50%);
+  $scatter: #D3BF92;
+
 
   &#iorad {
-    background: lighten(#8CBEB2, 20%);;
+    background: $iorad;
   }
 
   &#occrp {
-    background: lighten(#C6A8C9, 15%);;
+    background: lighten($iorad, 5%);
   }
 
   &#anvelocom {
-    background: lighten(#F199A7, 15%);;
+    background: lighten($iorad, 10%);
   }
 
   &#scatter {
-    background: lighten(#99D6F1, 10%);;
+    background: $scatter;
   }
 
   &#inu-chivu {
-    background: lighten(#1E4658, 62.5%);;
+    background: lighten($scatter, 5%);
   }
 
   &#smuff {
-    background: lighten(#C66B60, 31%);;
+    background: lighten($scatter, 10%);
   }
-
 }

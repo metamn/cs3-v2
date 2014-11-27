@@ -37,9 +37,9 @@ body #works article figure { padding: 1.56em 1.56em 0; }
 body #works article figure img { max-height: 15.6em; padding-bottom: 1.56em; max-width: 15.6em; }
 body #works article figure figcaption { text-align: center; text-transform: uppercase; letter-spacing: 1.1px; font-size: 1.6154em; }
 body #works article p { display: none; text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; color: #666666; position: relative; top: -0.39em; }
-body #works article#iorad { background: #cde3de; }
-body #works article#occrp { background: #e5d7e6; }
-body #works article#anvelocom { background: #fadce1; }
-body #works article#scatter { background: #c6e8f7; }
-body #works article#inu-chivu { background: #c8e1ec; }
-body #works article#smuff { background: #f0d7d4; }
+body #works article#iorad { background: #92a8d3; }
+body #works article#occrp { background: #a4b6da; }
+body #works article#anvelocom { background: #b7c5e1; }
+body #works article#scatter { background: #d3bf92; }
+body #works article#inu-chivu { background: #dacaa4; }
+body #works article#smuff { background: #e2d4b6; }
