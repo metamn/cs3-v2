@@ -19,6 +19,33 @@
     img {
       max-height: $text-width;
     }
+
+    figcaption {
+      display: block;
+      text-align: center;
+
+      @include uppercase;
+
+      font-size: $heading-level-2;
+      word-wrap: break-word;
+      padding: $lem/6 $lem/12;
+    }
+  }
+
+  /*
+  &#iorad figure figcaption {
+    @include square($lem * 1.5, $black);
+    letter-spacing: $lem/6;
+    line-height: 1.1;
+  }
+
+  &#occrp figure figcaption {
+    @include square($lem * 1.5, $black);
+    letter-spacing: $lem/6;
+    line-height: 1.1;
+
+    position: absolute;
+    bottom: $lem / 2;
   }
 
   /*
