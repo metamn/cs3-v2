@@ -1,5 +1,5 @@
 @mixin work {
-  @include flexbox($justify-content: center, $align-items: center);
+  @include flexbox($direction: column, $justify-content: center, $align-items: center);
 
   @include flex-item($flex-basis: calc(50% - 1px));
   border-right: 1px solid $lightgray;
@@ -10,14 +10,17 @@
     border-right: none;
   }
 
+  padding-bottom: $lem;
+
   figure {
-    padding: $lem;
+    padding: $lem $lem 0;
     @include mobile {
-      padding: $lem * 2;
+      padding: $lem * 2, $lem * 2 0;
     }
 
     img {
       max-height: $text-width;
+      padding-bottom: $lem;
     }
 
     figcaption {
@@ -27,10 +30,17 @@
       @include uppercase;
 
       font-size: $heading-level-2;
-      word-wrap: break-word;
-      padding: $lem/6 $lem/12;
     }
   }
+
+  p {
+    @include uppercase;
+    font-size: smaller;
+    color: $gray;
+    position: relative;
+    top: -$lem/4;
+  }
+
 
   /*
   &#iorad figure figcaption {

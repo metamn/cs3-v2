@@ -6,4 +6,8 @@
   <h3>{{ image.name }}</h3>
 
   {{ f.figure(loop.index0, image.name) }}
+
+  <p>
+    {{ image.description }}
+  </p>
 </article>
