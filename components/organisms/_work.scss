@@ -1,7 +1,7 @@
 @mixin work {
   @include flexbox($direction: column, $justify-content: center, $align-items: center);
 
-  @include flex-item($flex-basis: calc(50% - 1px));
+  @include flex-item($flex-basis: 33.3%);
   //border-right: 1px solid ;
   //border-bottom: 1px solid ;
 
@@ -10,7 +10,6 @@
     border-right: none;
   }
 
-  padding-bottom: $lem;
 
   figure {
     padding: $lem $lem 0;
@@ -19,12 +18,13 @@
     }
 
     img {
-      max-height: $text-width;
+      max-height: $text-width / 1.5;
       padding-bottom: $lem;
+      max-width: $text-width / 1.5;
     }
 
     figcaption {
-      display: block;
+      //display: block;
       text-align: center;
 
       @include uppercase;
@@ -34,6 +34,7 @@
   }
 
   p {
+    display: none;
     @include uppercase;
     font-size: smaller;
     color: $gray;
@@ -60,11 +61,11 @@
   }
 
   &#inu-chivu {
-    background: lighten(#1E4658, 55%);;
+    background: lighten(#1E4658, 62.5%);;
   }
 
   &#smuff {
-    background: lighten(#C66B60, 30%);;
+    background: lighten(#C66B60, 31%);;
   }
 
 }
