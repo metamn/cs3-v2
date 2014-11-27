@@ -10,26 +10,22 @@
     border-right: none;
   }
 
-  overflow: hidden;
   position: relative;
-  h3 {
-    display: inline-block;
-    position: absolute;
-    top: $lem/4;
-    left: 0;
-    width: 100%;
-    z-index: 0;
 
-    font-size: 1500%;
-    word-wrap: break-word;
-    line-height: .5;
+  h3 {
+    display: flex;
     text-align: center;
+
+    background: $red;
+    color: $white;
+    @include uppercase;
+    font-weight: 600;
+    font-size: smaller;
+    padding: $lem;
 
   }
 
   figure {
-    position: relative;
-
     padding: $lem;
     @include mobile {
       padding: $lem * 2;
@@ -37,37 +33,6 @@
 
     img {
       max-height: $text-width;
-    }
-  }
-
-
-  &#iorad {
-    h3 {
-      color: hsla(220, 42%, 20%, .5);
-    }
-  }
-
-  &#occrp {
-    h3 {
-      color: hsla(0, 51%, 38%, .5);
-    }
-  }
-
-  &#anvelocom {
-    h3 {
-      color: hsla(2, 75%, 81%, 1);
-    }
-  }
-
-  &#scatter {
-    h3 {
-      color: hsla(203, 84%, 71%, .5);
-    }
-  }
-
-  &#smuff {
-    h3 {
-      color: hsla(20, 92%, 53%, .5);
     }
   }
 }
