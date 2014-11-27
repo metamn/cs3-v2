@@ -34,17 +34,17 @@ images:
   - name: Inu Chivu
     description: Artist portfolio
     url: inu
-    mobile: inu-portfolio-thumb.png
-    tablet: inu-portfolio-thumb.png
-    laptop: inu-portfolio-thumb.png
-    desktop: inu-portfolio-thumb.png
+    mobile: inu-portfolio-thumb-1x.png
+    tablet: inu-portfolio-thumb-1x.png
+    laptop: inu-portfolio-thumb-1x.png
+    desktop: inu-portfolio-thumb-1x.png
   - name: Smuff
     description: E-commerce
     url: smuff
-    mobile: smuff-portfolio-thumb2.png
-    tablet: smuff-portfolio-thumb2.png
-    laptop: smuff-portfolio-thumb2.png
-    desktop: smuff-portfolio-thumb2.png
+    mobile: smuff-portfolio-thumb-1x.png
+    tablet: smuff-portfolio-thumb-1x.png
+    laptop: smuff-portfolio-thumb-2x.png
+    desktop: smuff-portfolio-thumb-2x.png
 ---
 
 {% include "../structures/head.swig" %}
