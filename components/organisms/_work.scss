@@ -2,8 +2,8 @@
   @include flexbox($direction: column, $justify-content: center, $align-items: center);
 
   @include flex-item($flex-basis: calc(50% - 1px));
-  border-right: 1px solid $lightgray;
-  border-bottom: 1px solid $lightgray;
+  //border-right: 1px solid ;
+  //border-bottom: 1px solid ;
 
   @include mobile {
     @include flex-item($flex-basis: 100%);
@@ -42,54 +42,29 @@
   }
 
 
-  /*
-  &#iorad figure figcaption {
-    @include square($lem * 1.5, $black);
-    letter-spacing: $lem/6;
-    line-height: 1.1;
-  }
 
-  &#occrp figure figcaption {
-    @include square($lem * 1.5, $black);
-    letter-spacing: $lem/6;
-    line-height: 1.1;
-
-    position: absolute;
-    bottom: $lem / 2;
-  }
-
-  /*
   &#iorad {
-    h3 {
-      background: hsl(220, 42%, 20%);
-    }
+    background: lighten(#8CBEB2, 20%);;
   }
 
   &#occrp {
-    h3 {
-      background: hsl(0, 51%, 38%);
-    }
+    background: lighten(#C6A8C9, 15%);;
   }
 
   &#anvelocom {
-    h3 {
-      @include colors;
-      border: 2px solid $black;
-    }
+    background: lighten(#F199A7, 15%);;
   }
 
   &#scatter {
-    h3 {
-      background: hsl(203, 84%, 71%);
-      color: $black;
-    }
+    background: lighten(#99D6F1, 10%);;
+  }
+
+  &#inu-chivu {
+    background: lighten(#1E4658, 55%);;
   }
 
   &#smuff {
-    h3 {
-      @include colors;
-      background: $lightgray;
-    }
+    background: lighten(#C66B60, 30%);;
   }
-  */
+
 }
