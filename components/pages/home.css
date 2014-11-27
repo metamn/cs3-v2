@@ -39,7 +39,7 @@ body #works article figure figcaption { text-align: center; text-transform: uppe
 body #works article p { display: none; text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; color: #666666; position: relative; top: -0.39em; }
 body #works article#iorad { background: #c9d3e9; }
 body #works article#occrp { background: #d2dbed; }
-body #works article#anvelocom { background: #dbe2f0; }
+body #works article#anvelocom { background: #c9d3e9; }
 body #works article#scatter { background: #d5edfb; }
 body #works article#inu-chivu { background: #e1f2fc; }
-body #works article#smuff { background: #ecf7fd; }
+body #works article#smuff { background: #d5edfb; }
