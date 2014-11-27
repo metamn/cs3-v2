@@ -2,27 +2,12 @@
   @include flexbox($justify-content: center, $align-items: center);
 
   @include flex-item($flex-basis: calc(50% - 1px));
-  border-right: 1px solid lighten($grey, 50%);
-  border-bottom: 1px solid lighten($grey, 50%);
+  border-right: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray;
 
   @include mobile {
     @include flex-item($flex-basis: 100%);
     border-right: none;
-  }
-
-  position: relative;
-
-  h3 {
-    display: flex;
-    text-align: center;
-
-    background: $red;
-    color: $white;
-    @include uppercase;
-    font-weight: 600;
-    font-size: smaller;
-    padding: $lem;
-
   }
 
   figure {
@@ -35,4 +20,39 @@
       max-height: $text-width;
     }
   }
+
+  /*
+  &#iorad {
+    h3 {
+      background: hsl(220, 42%, 20%);
+    }
+  }
+
+  &#occrp {
+    h3 {
+      background: hsl(0, 51%, 38%);
+    }
+  }
+
+  &#anvelocom {
+    h3 {
+      @include colors;
+      border: 2px solid $black;
+    }
+  }
+
+  &#scatter {
+    h3 {
+      background: hsl(203, 84%, 71%);
+      color: $black;
+    }
+  }
+
+  &#smuff {
+    h3 {
+      @include colors;
+      background: $lightgray;
+    }
+  }
+  */
 }
