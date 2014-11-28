@@ -4,14 +4,13 @@
 
   nav {
     @include grid;
+    @include icons;
 
     &#contact {
-      @include icons;
       @include contact;
     }
 
     &#links {
-      @include icons($lem);
       @include links;
     }
   }

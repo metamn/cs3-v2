@@ -1,5 +1,5 @@
 @mixin links {
   @include below-laptop {
-    margin-top: $lem;
+    margin-top: $lem * 2;
   }
 }
