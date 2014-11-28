@@ -31,11 +31,18 @@ body {
     @include header;
   }
 
-  #about {
-    @include about;
-  }
 
-  #works {
-    @include works;
+  section {
+    &#about {
+      @include about;
+    }
+
+    &#works {
+      @include works;
+    }
+
+    &#menu {
+      @include menu;
+    }
   }
 }

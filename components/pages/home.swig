@@ -4,29 +4,29 @@ url: http://metamn.github.io/cs3-v2
 #url: /
 contact:
   - title: Send me an email
-    icon: mail
+    glyph: mail
     type: email
     email: bartus.csongor@gmail.com
   - title: Contact via Twitter
-    icon: twitter
+    glyph: twitter
     url: http://twitter.com/metamn
   - title: Code samples on Github
-    icon: mark-github
+    glyph: mark-github
     url: http://github.com/metamn/its-csongor
   - title: Inspiration on Tumblr
-    icon: tumblr
+    glyph: tumblr
     url: http://metamn.tumblr.com
 menu:
   - title: Works
-    icon: keyboard-arrow-down
+    glyph: keyboard-arrow-down
     url: #works
     text: Works
-    icon-position: after
+    position: after
   - title: About
-    icon: keyboard-arrow-down
+    glyph: keyboard-arrow-down
     url: #bio
     text: About
-    icon-position: after
+    position: after
 images:
   - name: Iorad
     description: Pricing and checkout page design

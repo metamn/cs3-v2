@@ -1,0 +1,7 @@
+@mixin icons {
+  @include flexbox;
+
+  div {
+    margin-right: $lem/2;
+  }
+}

@@ -1,0 +1,16 @@
+@mixin menu {
+  @include flexbox;
+  padding: $lem;
+
+  nav {
+    @include laptop-and-up {
+      @include flex-item($flex-basis: 33.3%);
+    }
+
+    @include icons;
+
+    &#links {
+      margin-left: $lem;
+    }
+  }
+}
