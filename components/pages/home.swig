@@ -4,11 +4,11 @@ url: http://metamn.github.io/cs3-v2
 #url: /
 contact:
   - title: Send me an email
-    icon: email-32px
+    icon: mail
     type: email
     email: bartus.csongor@gmail.com
   - title: Contact via Twitter
-    icon: Twitter_logo_blue
+    icon: twitter
     url: http://twitter.com/metamn
   - title: Code samples on Github
     icon: mark-github
