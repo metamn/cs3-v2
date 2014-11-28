@@ -1,3 +1,13 @@
 @mixin icons {
-  @include flexbox($justify-content: space-between);
+  @include flexbox($direction: column);
+
+  .icon {
+    margin-bottom: $lem;
+    font-size: small;
+
+    .glyph {
+      position: relative;
+      top: $lem/10;
+    }
+  }
 }

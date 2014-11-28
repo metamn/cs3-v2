@@ -17,9 +17,9 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-body { font-size: 125%; line-height: 1.56; font-family: "Europa", sans-serif; font-weight: 300; color: #1a1a1a; background-color: #f9f9f9; }
-@media only screen and (max-width: 37.499em) { body { font-size: 100%; line-height: 1.56; } }
-@media only screen and (min-width: 90em) { body { font-size: 150%; line-height: 1.56; } }
+body { font-size: 100%; line-height: 1.25; font-family: "Europa", sans-serif; font-weight: 300; color: #1a1a1a; background-color: #f9f9f9; }
+@media only screen and (max-width: 37.499em) { body { font-size: 100%; line-height: 1.25; } }
+@media only screen and (min-width: 90em) { body { font-size: 100%; line-height: 1.25; } }
 body section > h3, body article > h3, body aside > h3, body nav > h3 { display: none; }
 body figure img { max-width: 100%; height: auto; }
 body figure figcaption { display: none; }
@@ -44,7 +44,9 @@ body section#works article#scatter { background: #d5edfb; }
 body section#works article#inu-chivu { background: #e1f2fc; }
 body section#works article#smuff { background: #d5edfb; }
 body section#menu { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1.56em 1.56em 7.8em; }
-body section#menu nav { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; }
+body section#menu nav { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+body section#menu nav .icon { margin-bottom: 1.56em; font-size: small; }
+body section#menu nav .icon .glyph { position: relative; top: 0.156em; }
 body section#menu nav#contact { font-size: 1.6154em; }
 body section#menu nav#links { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: start; -ms-flex-pack: start; -webkit-justify-content: flex-start; -moz-justify-content: flex-start; justify-content: flex-start; }
 @media only screen and (max-width: 63.999em) { body section#menu nav#links { margin-top: 1.56em; } }
