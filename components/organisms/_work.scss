@@ -2,8 +2,7 @@
   @include flexbox($justify-content: center, $align-items: center);
 
   @include flex-item($flex-basis: calc(33.3% - 3px));
-  border-right: 3px solid $gray;
-  border-bottom: 3px solid $gray;
+
 
   @include below-laptop {
     @include flex-item($flex-basis: 100%);
@@ -35,19 +34,16 @@
     display: none;
     @include uppercase;
     font-size: smaller;
-    color: $gray;
     position: relative;
     top: -$lem/4;
   }
 
 
   // This is the iorad blue
-  //$iorad: lighten(hsl(220, 42%, 20%), 65%);
-  // This comes from Kuler, derived from iorad blue, making sure fits a scatter base color (brownish)
-  //$scatter: #D3BF92;
+  $iorad: lighten(hsl(220, 42%, 20%), 65%);
 
-  // This is the scatter red
-  //$scatter: lighten(hsl(203, 84%, 71%), 20%);
+  // This is the scatter blue
+  $scatter: lighten(hsl(203, 84%, 71%), 20%);
 
   &#iorad {
     background: $iorad;

@@ -2,6 +2,31 @@
 title: Home
 url: http://metamn.github.io/cs3-v2
 #url: /
+contact:
+  - title: Send me an email
+    icon: email-32px
+    type: email
+    email: bartus.csongor@gmail.com
+  - title: Contact via Twitter
+    icon: Twitter_logo_blue
+    url: http://twitter.com/metamn
+  - title: Code samples on Github
+    icon: mark-github
+    url: http://github.com/metamn/its-csongor
+  - title: Inspiration on Tumblr
+    icon: tumblr
+    url: http://metamn.tumblr.com
+menu:
+  - title: Works
+    icon: keyboard-arrow-down
+    url: #works
+    text: Works
+    icon-position: after
+  - title: About
+    icon: keyboard-arrow-down
+    url: #bio
+    text: About
+    icon-position: after
 images:
   - name: Iorad
     description: Pricing and checkout page design
@@ -51,6 +76,7 @@ images:
 {% include "../structures/header.swig" %}
 
 {% include "../structures/about.swig" %}
+{% include "../structures/menu.swig" %}
 {% include "../structures/works.swig" %}
 
 {% include "../structures/footer.swig" %}

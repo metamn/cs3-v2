@@ -6,7 +6,7 @@
 @import "../organisms/**/*";
 @import "../structures/**/*";
 
-
+@import "icomoon.css";
 
 body {
   @include responsive-grid-units;
