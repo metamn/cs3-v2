@@ -1,13 +1,6 @@
 @mixin work {
   @include flexbox($justify-content: center, $align-items: center);
-
-  @include flex-item($flex-basis: calc(33.3% - 3px));
-
-
-  @include below-laptop {
-    @include flex-item($flex-basis: 100%);
-    border-right: none;
-  }
+  @include grid;
 
 
   figure {

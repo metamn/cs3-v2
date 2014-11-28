@@ -1,16 +1,18 @@
 @mixin menu {
-  @include flexbox;
-  padding: $lem;
+  @include flexbox($wrap: wrap);
+  padding: $lem * 2 $lem;
 
   nav {
-    @include laptop-and-up {
-      @include flex-item($flex-basis: 33.3%);
+    @include grid;
+
+    &#contact {
+      @include icons;
+      @include contact;
     }
 
-    @include icons;
-
     &#links {
-      margin-left: $lem;
+      @include icons($lem);
+      @include links;
     }
   }
 }

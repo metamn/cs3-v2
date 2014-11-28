@@ -1,0 +1,5 @@
+@mixin links {
+  @include below-laptop {
+    margin-top: $lem;
+  }
+}
