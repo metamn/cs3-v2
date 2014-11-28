@@ -1,5 +1,11 @@
 @mixin links {
+  @include flexbox($justify-content: flex-start);
+
   @include below-laptop {
-    margin-top: $lem * 2;
+    margin-top: $lem;
+  }
+
+  div {
+    @include flex-item($flex-basis: 30%);
   }
 }

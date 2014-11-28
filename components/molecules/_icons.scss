@@ -1,7 +1,3 @@
-@mixin icons($margin-right: $lem) {
-  @include flexbox;
-
-  div {
-    margin-right: $margin-right;
-  }
+@mixin icons {
+  @include flexbox($justify-content: space-between);
 }
