@@ -1,6 +1,8 @@
 @mixin works {
   @include flexbox($wrap: wrap);
-  background: $lightgray;
+
+  padding: $lem;
+  background: $gray;
 
   article {
     @include work;

@@ -4,12 +4,14 @@
 // Color codes
 $white: hsla(0, 0, 97.5%, 1);
 $black: hsla(0, 0%, 10%, 1);
-$red: hsla(0, 100%, 50%, 1);
-$gray: hsla(0, 0%, 40%, 1);
-$grey: $gray;
-$lightgray: lighten($grey, 50%);
-$lightgrey: $lightgray;
+//$red: hsla(0, 100%, 50%, 1);
+$red: #CC683E;
 
+$gray: #CC683E;
+$grey: $gray;
+
+$iorad: #E3843A;
+$scatter: #E3533A;
 
 
 // Color pairs
