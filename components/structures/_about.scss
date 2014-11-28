@@ -1,6 +1,5 @@
 @mixin about {
-  @include colors(white-on-black);
-  margin: $lem 0 0;
+  //@include colors(white-on-black);
 
   p {
     padding: $lem - $lem/4;
@@ -9,7 +8,6 @@
 
     span {
       color: $red;
-      font-weight: 400;
       font-style: italic;
     }
   }

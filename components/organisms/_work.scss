@@ -32,11 +32,13 @@
   }
 
 
+
   // This is the iorad blue
   $iorad: lighten(hsl(220, 42%, 20%), 65%);
 
   // This is the scatter blue
   $scatter: lighten(hsl(203, 84%, 71%), 20%);
+
 
   &#iorad {
     background: $iorad;
@@ -61,4 +63,5 @@
   &#smuff {
     background: lighten($scatter, 0%);
   }
+  
 }

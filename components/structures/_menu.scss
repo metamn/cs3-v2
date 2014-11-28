@@ -1,9 +1,9 @@
 @mixin menu {
   @include flexbox($wrap: wrap);
-  padding: $lem $lem $lem;
+  padding: $lem $lem $lem * 5;
 
   nav {
-    @include grid;
+    @include flex-item($flex-basis: 100%);
     @include icons;
 
     &#contact {

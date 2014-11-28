@@ -76,7 +76,6 @@ images:
 {% include "../structures/header.swig" %}
 
 {% include "../structures/about.swig" %}
-{% include "../structures/menu.swig" %}
 {% include "../structures/works.swig" %}
 
 {% include "../structures/footer.swig" %}

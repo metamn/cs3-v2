@@ -7,5 +7,20 @@
 
   div {
     @include flex-item($flex-basis: 30%);
+
+    span {
+
+      &.glyph {
+        position: relative;
+        top: $lem / 8;
+      }
+
+      &.text {
+        @include uppercase;
+        font-size: smaller;
+        font-weight: 400;
+      }
+    }
+
   }
 }
