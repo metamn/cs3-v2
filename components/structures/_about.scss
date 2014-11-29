@@ -4,7 +4,7 @@
   p {
     padding: $lem - $lem/4;
     max-width: $text-width;
-    font-size: $heading-level-1;
+    @include font(subtitle);
 
     span {
       color: $red;

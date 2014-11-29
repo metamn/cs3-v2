@@ -24,9 +24,6 @@ body {
     @include figure;
   }
 
-
-
-
   header {
     @include header;
   }
@@ -43,6 +40,10 @@ body {
 
     &#menu {
       @include menu;
+    }
+
+    &#portfolio-header {
+      @include portfolio-header;
     }
   }
 }

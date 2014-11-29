@@ -1,0 +1,5 @@
+@mixin font-portfolio-title {
+  @include uppercase;
+  font-size: $heading-level-2;
+  font-weight: 400;
+}

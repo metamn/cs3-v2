@@ -6,9 +6,7 @@
 
     span {
       &.text {
-        @include uppercase;
-        font-size: smaller;
-        font-weight: 400;
+        @include font(navigation);
       }
     }
   }

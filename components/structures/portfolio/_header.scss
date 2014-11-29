@@ -1,0 +1,20 @@
+@mixin portfolio-header {
+  @include flexbox($wrap: wrap);
+  padding: 0 $lem;
+
+  article {
+    @include grid;
+
+    &#portfolio-title {
+      @include portfolio-title;
+    }
+
+    &#portfolio-services {
+      @include portfolio-services;
+    }
+
+    &#portfolio-technologies {
+      @include portfolio-technologies;
+    }
+  }
+}

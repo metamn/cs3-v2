@@ -15,4 +15,16 @@
   @if ($type == logo) {
     @include font-logo;
   }
+
+  @if ($type == subtitle) {
+    @include font-subtitle;
+  }
+
+  @if ($type == navigation) {
+    @include font-navigation;
+  }
+
+  @if ($type == portfolio-title) {
+    @include font-portfolio-title;
+  }
 }
