@@ -14,9 +14,9 @@ technologies:
 images:
   - name: Iorad pricing page on laptop
     mobile: iorad-pricing-laptop-front-1x.png
-    tablet: iorad-pricing-laptop-front-1x.png
-    laptop: iorad-pricing-laptop-front-1x.png
-    desktop: iorad-pricing-laptop-front-1x.png
+    tablet: iorad-pricing-laptop-front-2x.png
+    laptop: iorad-pricing-laptop-front-2x.png
+    desktop: iorad-pricing-laptop-front-2x.png
 x:
   - name: Iorad pricing page on desktop
     mobile: iorad-pricing-desktop-right-1x.png
@@ -54,7 +54,7 @@ menu:
 {% include "../structures/header.swig" %}
 
 {% include "../structures/portfolio/header.swig" %}
-{% include "../structures/portfolio/images.swig" %}
+{% include "../structures/portfolio/subtitle.swig" %}
 
 {% include "../structures/menu.swig" %}
 {% include "../structures/footer.swig" %}

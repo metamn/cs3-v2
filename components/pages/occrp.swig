@@ -33,7 +33,7 @@ menu:
 {% include "../structures/header.swig" %}
 
 {% include "../structures/portfolio/header.swig" %}
-{% include "../structures/portfolio/images.swig" %}
+{% include "../structures/portfolio/subtitle.swig" %}
 
 {% include "../structures/menu.swig" %}
 {% include "../structures/footer.swig" %}

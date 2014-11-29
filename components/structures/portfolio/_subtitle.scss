@@ -1,0 +1,15 @@
+@mixin portfolio-subtitle {
+  @include flexbox($wrap: wrap, $justify-content: center, $align-items: center);
+  padding: $lem;
+  background: $iorad;
+
+  article {
+    @include flex-item($flex-basis: 50%);
+
+    &#subtitle {
+      p {
+        @include font(subtitle);
+      }
+    }
+  }
+}
