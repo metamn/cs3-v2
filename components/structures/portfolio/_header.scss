@@ -1,6 +1,7 @@
 @mixin portfolio-header {
   @include flexbox($wrap: wrap);
-  padding: 0 $lem;
+  padding: $lem;
+  background: $grey;
 
   article {
     @include grid;

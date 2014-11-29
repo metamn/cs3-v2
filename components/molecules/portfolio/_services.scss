@@ -1,13 +1,5 @@
 @mixin portfolio-services {
   ul {
-    li {
-      margin-bottom: $lem/4;
-
-      &:before {
-        content: '\2014';
-        display: inline-block;
-        margin-right: $lem/4;
-      }
-    }
+    @include list;
   }
 }

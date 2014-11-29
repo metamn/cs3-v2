@@ -1,8 +1,7 @@
 @mixin about {
-  //@include colors(white-on-black);
+  padding: $lem;
 
   p {
-    padding: $lem - $lem/4;
     max-width: $text-width;
     @include font(subtitle);
 

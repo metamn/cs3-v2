@@ -23,11 +23,12 @@ body { font-size: 100%; line-height: 1.25; font-family: "Europa", sans-serif; fo
 body section > h3, body article > h3, body aside > h3, body nav > h3 { display: none; }
 body figure img { max-width: 100%; height: auto; }
 body figure figcaption { display: none; }
-body header { padding: 1.56em 1.56em 3.12em; }
+body header { padding: 3.12em 1.56em; }
 body header #logo .square { width: 1.04em; height: 1.04em; background: #f9f9f9; }
 body header #logo h1 { font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1.1px; }
-body header #logo h1 a { color: #1a1a1a; background-color: #f9f9f9; text-decoration: none; }
-body section#about p { padding: 1.17em; max-width: 23.4em; font-size: 1.3077em; }
+body header #logo h1 a { color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
+body section#about { padding: 1.56em; }
+body section#about p { max-width: 23.4em; font-size: 1.3077em; }
 body section#about p span { color: red; font-style: italic; }
 body section#works { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 @media only screen and (min-width: 64em) { body section#works { padding: 0 1.56em; } }
@@ -47,11 +48,11 @@ body section#menu { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ displ
 body section#menu nav#links { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
 body section#menu nav#links div { margin-right: 1.56em; }
 body section#menu nav#links div span.text { text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; font-weight: 400; }
-body section#portfolio-header { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 1.56em; }
+body section#portfolio-header { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1.56em; background: #f1f1f1; }
 body section#portfolio-header article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; padding-bottom: 1.56em; }
 @media only screen and (min-width: 64em) { body section#portfolio-header article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 33.33%; -moz-flex-basis: 33.33%; -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; } }
 body section#portfolio-header article#portfolio-title h2 { text-transform: uppercase; letter-spacing: 1.1px; font-size: 1.6154em; font-weight: 400; }
-body section#portfolio-header article#portfolio-title h2 a { color: #1a1a1a; background-color: #f9f9f9; text-decoration: none; }
+body section#portfolio-header article#portfolio-title h2 a { color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
 body section#portfolio-header article#portfolio-title .subtitle { display: block; font-size: 1.3077em; }
 body section#portfolio-header article#portfolio-services ul li { margin-bottom: 0.39em; }
 body section#portfolio-header article#portfolio-services ul li:before { content: '\2014'; display: inline-block; margin-right: 0.39em; }
