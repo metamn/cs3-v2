@@ -4,5 +4,5 @@
   <h3>Portfolio title</h3>
 
   <h2>{{ l.link(url, title, title) }}</h2>
-  <h3 class="subtitle">{{ subtitle }}</h3>
+  
 </article>

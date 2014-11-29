@@ -45,5 +45,9 @@ body {
     &#portfolio-header {
       @include portfolio-header;
     }
+
+    &#portfolio-images {
+      @include portfolio-images;
+    }
   }
 }

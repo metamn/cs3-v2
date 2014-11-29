@@ -4,6 +4,7 @@
 
   article {
     @include grid;
+    padding-bottom: $lem;
 
     &#portfolio-title {
       @include portfolio-title;
