@@ -9,7 +9,7 @@
     &#subtitle {
       p {
         max-width: $text-width;
-        font-weight: 400;
+        @include font(description);
 
         + p {
           padding-top: $lem;

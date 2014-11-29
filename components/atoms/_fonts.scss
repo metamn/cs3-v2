@@ -16,8 +16,8 @@
     @include font-logo;
   }
 
-  @if ($type == subtitle) {
-    @include font-subtitle;
+  @if ($type == about) {
+    @include font-about;
   }
 
   @if ($type == navigation) {
@@ -26,5 +26,9 @@
 
   @if ($type == portfolio-title) {
     @include font-portfolio-title;
+  }
+
+  @if ($type == description) {
+    @include font-description;
   }
 }

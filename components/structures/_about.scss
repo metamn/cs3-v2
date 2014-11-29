@@ -3,7 +3,7 @@
 
   p {
     max-width: $text-width;
-    @include font(subtitle);
+    @include font(about);
 
     span {
       color: $red;
