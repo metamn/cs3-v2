@@ -11,6 +11,10 @@ technologies:
   - CSS3
   - SASS
   - jQuery
+description:
+  - "iorad is a startup in the beta launch phase going live at the first time in the next weeks."
+  - "Prior the launch they've decided to give a face lift for their two most important pages: the Pricing and the Checkout page."
+  - "The project requirements were: speed of execution, keeping current visual assets untouched, cross-device and cross-browser compatibility. And a week duration from signing the contract to the final delivery." 
 images:
   - name: Iorad pricing page on laptop
     mobile: iorad-pricing-laptop-front-1x.png

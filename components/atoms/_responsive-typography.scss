@@ -4,20 +4,6 @@
 // - Responsive font sizes and line heights
 
 @mixin responsive-typography {
-  // Font size for mobile
-  @include mobile {
-    font-size: 100%;
-    line-height: 1.25;
-  }
-
-  // Font size for tablets and laptops
   font-size: 100%;
-  line-height: 1.25;
-
-  // Font size for desktops
-  @include desktop-and-up {
-    font-size: 100%;
-    line-height: 1.25;
-  }
-
+  line-height: 1.5;
 }

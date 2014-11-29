@@ -11,6 +11,10 @@ technologies:
   - CSS3
   - SASS
   - jQuery
+description:
+  - "Organized Crime And Corruption Reporting Project had it's website dated from the last decade."
+  - "We've managed to come up with a modern, newspaper-like redesign with clean headlines, good structure, clean understanding of priorities."
+  - "The new site supports all screens from mobile devices up to large projectors."
 images:
   - name: The OCCRP frontpage on mobile
     mobile: occrp-frontpage-mobile-portrait-1x.png

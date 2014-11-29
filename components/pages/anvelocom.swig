@@ -14,6 +14,10 @@ technologies:
   - CSS3
   - SASS
   - jQuery
+description:
+  - "Anvelocom started as a Wordpress blog to research the market for auto off-road accessories and tuning equipment."
+  - "After initial success we've created a responsive e-commerce Wordpress theme together with a strong visual identity."
+  - "A programming challenge was to create dynamic filters for products which work with any number of categories and combinations."
 images:
   - name: The Anvelocom archive page on tablet
     mobile: anvelocom-archive-tablet-portrait-1x.png
