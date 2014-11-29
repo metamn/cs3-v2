@@ -4,10 +4,7 @@
 
 
   figure {
-    padding: $lem;
-    @include below-laptop {
-      padding: $lem * 2;
-    }
+    padding: $lem * 2;
 
     img {
       max-height: $text-width / 1.5;
@@ -30,14 +27,6 @@
     position: relative;
     top: -$lem/4;
   }
-
-
-
-  // This is the iorad blue
-  $iorad: lighten(hsl(220, 42%, 20%), 65%);
-
-  // This is the scatter blue
-  $scatter: lighten(hsl(203, 84%, 71%), 20%);
 
 
   &#iorad {
@@ -63,5 +52,5 @@
   &#smuff {
     background: lighten($scatter, 0%);
   }
-  
+
 }

@@ -1,14 +1,8 @@
 @mixin menu {
   @include flexbox($wrap: wrap);
-  padding: $lem $lem $lem * 5;
+  padding: $lem;
 
   nav {
-    @include icons;
-
-    &#contact {
-      @include contact;
-    }
-
     &#links {
       @include links;
     }

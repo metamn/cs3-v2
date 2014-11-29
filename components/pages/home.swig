@@ -11,7 +11,7 @@ contact:
   - title: Contact via Twitter
     glyph: twitter
     url: http://twitter.com/metamn
-    text: "@metamn"
+    text: "metamn"
   - title: Code samples on Github
     glyph: mark-github
     url: http://github.com/metamn/its-csongor
@@ -21,16 +21,15 @@ contact:
     url: http://metamn.tumblr.com
     text: inspiration
 menu:
-  - title: Works
-    glyph: keyboard-arrow-down
-    url: #works
-    text: Works
-    position: after
   - title: About
-    glyph: keyboard-arrow-down
-    url: #bio
+    url: about
     text: About
-    position: after
+  - title: Contact
+    url: contact
+    text: Contact
+  - title: Styleguide
+    url: styleguide
+    text: Styleguide
 images:
   - name: Iorad
     description: Pricing and checkout page design

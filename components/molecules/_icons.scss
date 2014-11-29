@@ -1,13 +1,7 @@
 @mixin icons {
-  @include flexbox($direction: column);
+  @include flexbox;
 
   .icon {
-    margin-bottom: $lem;
-    font-size: small;
-
-    .glyph {
-      position: relative;
-      top: $lem/10;
-    }
+    margin-right: $lem / 2;
   }
 }

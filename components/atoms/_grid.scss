@@ -1,5 +1,6 @@
 @mixin grid {
   @include flex-item($flex-basis: 100%);
+
   @include laptop-and-up {
     @include flex-item($flex-basis: 33.33%);
   }
