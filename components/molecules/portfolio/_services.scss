@@ -1,5 +1,6 @@
 @mixin portfolio-services {
   ul {
     @include list;
+    margin-left: $lem;
   }
 }

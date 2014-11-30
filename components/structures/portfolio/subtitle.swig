@@ -9,10 +9,10 @@
     {% endfor %}
   </article>
 
-  
+
 
   {% for image in images %}
-    {% if loop.first %}
+    {% if loop.index <= 3 %}
       {% include "../../organisms/work.swig" %}
     {% endif %}
   {% endfor %}

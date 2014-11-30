@@ -19,11 +19,21 @@ description:
   - "After initial success we've created a responsive e-commerce Wordpress theme together with a strong visual identity."
   - "A programming challenge was to create dynamic filters for products which work with any number of categories and combinations."
 images:
-  - name: The Anvelocom archive page on tablet
-    mobile: anvelocom-archive-tablet-portrait-1x.png
-    tablet: anvelocom-archive-tablet-portrait-1x.png
-    laptop: anvelocom-archive-tablet-portrait-1x.png
-    desktop: anvelocom-archive-tablet-portrait-1x.png
+  - name: The Anvelocom frontpage on mobile
+    mobile: anvelocom-frontpage-mobile-portrait-1x.png
+    tablet: anvelocom-frontpage-mobile-portrait-1x.png
+    laptop: anvelocom-frontpage-mobile-portrait-1x.png
+    desktop: anvelocom-frontpage-mobile-portrait-1x.png
+  - name: The Anvelocom menu on mobile
+    mobile: anvelocom-menu-mobile-portrait-1x.png
+    tablet: anvelocom-menu-mobile-portrait-1x.png
+    laptop: anvelocom-menu-mobile-portrait-1x.png
+    desktop: anvelocom-menu-mobile-portrait-1x.png
+  - name: The Anvelocom archive page on mobile
+    mobile: anvelocom-archive-mobile-portrait-1x.png
+    tablet: anvelocom-archive-mobile-portrait-1x.png
+    laptop: anvelocom-archive-mobile-portrait-1x.png
+    desktop: anvelocom-archive-mobile-portrait-1x.png
 menu:
   - title: About
     url: about
