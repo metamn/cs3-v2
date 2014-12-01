@@ -59,7 +59,7 @@ images:
     desktop: scatter-frontpage-2-desktop-front-2x.png
   - name: Inu Chivu
     description: Artist portfolio
-    url: inu
+    url: inu-chivu
     mobile: inu-portfolio-thumb-1x.png
     tablet: inu-portfolio-thumb-1x.png
     laptop: inu-portfolio-thumb-1x.png
