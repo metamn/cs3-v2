@@ -1,6 +1,7 @@
 {% import "../atoms/macros/classname.swig" as c  %}
 {% set classname = c.classname(title) %}
 
+<!doctype html>
 <html lang="en" class="{{ classname }}">
   <head>
     <meta charset="utf-8" />
@@ -8,7 +9,7 @@
 
     <title>{{ title }}</title>
 
-    <link href="/assets/styles/home.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/assets/styles/all.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
     <!-- Picturefill Responsive Images -->
     <script async src="/assets/scripts/picturefill.min.js"></script>

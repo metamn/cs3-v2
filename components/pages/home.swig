@@ -1,7 +1,7 @@
 ---
 title: Home
 #url: http://metamn.github.io/cs3-v2
-url: 
+url:
 contact:
   - title: Send me an email
     glyph: mail
@@ -75,11 +75,10 @@ images:
     desktop: smuff-portfolio-thumb-2x.png
 ---
 
-{% include "../structures/head.swig" %}
-{% include "../structures/header.swig" %}
+{% extends "../templates/default.swig" %}
+{% block content %}
 
 {% include "../structures/about.swig" %}
 {% include "../structures/works.swig" %}
-{% include "../structures/menu.swig" %}
 
-{% include "../structures/footer.swig" %}
+{% endblock %}

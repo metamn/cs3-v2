@@ -67,10 +67,10 @@ gulp.task('styles', function() {
 
 
 // Scripts
-// - collects all .js files into main.js, then minify into main.min.js, then move to site/assets/scripts
+// - collects all .js files into all.js, then minify into all.min.js, then move to site/assets/scripts
 gulp.task('scripts', function() {
   return gulp.src(paths.js)
-    .pipe(concat('main.js'))
+    .pipe(concat('all.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest(paths.scripts));
