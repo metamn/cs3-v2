@@ -22,7 +22,6 @@ body section > h3, body article > h3, body aside > h3, body nav > h3 { display: 
 body figure img { max-width: 100%; height: auto; }
 body figure figcaption { display: none; }
 body header { padding: 3.12em 1.56em; }
-body header #logo .square { width: 1.04em; height: 1.04em; background: #f9f9f9; }
 body header #logo h1 { font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1.1px; }
 body header #logo h1 a { color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
 body section#about { padding: 1.56em; }
