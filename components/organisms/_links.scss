@@ -7,6 +7,13 @@
     span {
       &.text {
         @include font(navigation);
+
+        &:before {
+          content: '\2014';
+          display: inline-block;
+          margin-right: $lem/4;
+          color: $red;
+        }
       }
     }
   }
