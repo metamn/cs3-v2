@@ -1,7 +1,8 @@
-{% import "../atoms/macros/link.swig" as l  %}
 
 <div id="logo">
   <h1>
-    {{ l.link(site.url + '/', "It's Csongor", "It's Csongor") }}
+    {% set url = site.url + '/' %}
+    {% set title = site.title %}
+    {% include "../atoms/link.swig" %}
   </h1>
 </div>
