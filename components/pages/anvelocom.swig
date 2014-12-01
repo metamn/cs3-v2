@@ -1,7 +1,5 @@
 ---
 title: Anvelocom
-url: http://metamn.github.io/cs3-v2
-#url: /
 subtitle: E-commerce
 services:
   - Identity
