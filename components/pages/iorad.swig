@@ -1,7 +1,5 @@
 ---
 title: Iorad
-#url: http://metamn.github.io/cs3-v2
-url: /iorad
 subtitle: Pricing and Checkout page redesign
 services:
   - Responsive web design
@@ -54,11 +52,4 @@ menu:
     text: Styleguide
 ---
 
-{% include "../structures/head.swig" %}
-{% include "../structures/header.swig" %}
-
-{% include "../structures/portfolio/header.swig" %}
-{% include "../structures/portfolio/subtitle.swig" %}
-
-{% include "../structures/menu.swig" %}
-{% include "../structures/footer.swig" %}
+{% extends "../templates/portfolio.swig" %}

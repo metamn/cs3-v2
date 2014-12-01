@@ -1,4 +1,4 @@
-{% extends "../templates/default.swig" %}
+{% extends "default.swig" %}
 {% block content %}
 
 {% include "../structures/portfolio/header.swig" %}

@@ -1,7 +1,5 @@
 ---
 title: Home
-#url: http://metamn.github.io/cs3-v2
-url:
 contact:
   - title: Send me an email
     glyph: mail

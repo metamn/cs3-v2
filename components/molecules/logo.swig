@@ -2,6 +2,6 @@
 
 <div id="logo">
   <h1>
-      {{ l.link(url, "It's Csongor", "It's Csongor") }}
+    {{ l.link(site.url + '/', "It's Csongor", "It's Csongor") }}
   </h1>
 </div>

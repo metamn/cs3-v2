@@ -1,7 +1,5 @@
 ---
 title: Scatter
-url: http://metamn.github.io/cs3-v2
-#url: /
 subtitle: Landing and Pricing page design
 services:
   - Identity
@@ -40,11 +38,4 @@ menu:
     text: Styleguide
 ---
 
-{% include "../structures/head.swig" %}
-{% include "../structures/header.swig" %}
-
-{% include "../structures/portfolio/header.swig" %}
-{% include "../structures/portfolio/subtitle.swig" %}
-
-{% include "../structures/menu.swig" %}
-{% include "../structures/footer.swig" %}
+{% extends "../templates/portfolio.swig" %}
