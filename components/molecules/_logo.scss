@@ -4,6 +4,10 @@
 
     a {
       @include link;
+
+      span {
+        color: $red;
+      }
     }
   }
 }

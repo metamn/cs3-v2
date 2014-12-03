@@ -3,6 +3,6 @@
 
 <a href="{{ url | default(site.url + '/' + classname)}}" title="{{ title }}">
   {% block link %}
-    {{ text | default(title) }}
+    {{ text | default(title) | safe }}
   {% endblock %}
 </a>
