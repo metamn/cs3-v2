@@ -7,6 +7,7 @@ services:
   - E-commerce
   - Responsive web design
   - Front&mdash;end development
+  - Back&mdash;end development
 technologies:
   - Wordpress
   - Yii MVC

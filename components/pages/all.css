@@ -25,6 +25,7 @@ body header { padding: 3.12em 1.56em; }
 body header #logo h1 { font-family: "Montserrat", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1.1px; }
 body header #logo h1 a { color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
 body header #logo h1 a span { color: red; }
+@media only screen and (min-width: 90em) { body { padding: 1.56em; } }
 body section#about { padding: 1.56em; }
 body section#about p { max-width: 23.4em; font-size: 1.3077em; }
 body section#about p span { color: red; font-style: italic; }

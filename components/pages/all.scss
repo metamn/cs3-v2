@@ -29,6 +29,12 @@ body {
   }
 
 
+  @include desktop-and-up {
+    padding: $lem;
+  }
+
+
+
   section {
     &#about {
       @include about;
