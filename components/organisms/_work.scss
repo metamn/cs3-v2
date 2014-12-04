@@ -2,55 +2,25 @@
   @include flexbox($justify-content: center, $align-items: center);
   @include grid;
 
-
   figure {
     padding: $lem * 2;
 
     img {
       max-height: $text-width / 1.5;
     }
-
-    figcaption {
-      //display: block;
-      text-align: center;
-
-      @include uppercase;
-
-      font-size: $heading-level-2;
-    }
   }
 
   p {
     display: none;
-    @include uppercase;
-    font-size: smaller;
-    position: relative;
-    top: -$lem/4;
   }
 
 
-  &#iorad {
-    background: $iorad;
+  &:nth-of-type(odd) {
+    background: $gray1;
   }
 
-  &#occrp {
-    background: lighten($iorad, 2.5%);
-  }
-
-  &#anvelocom {
-    background: lighten($iorad, 0%);
-  }
-
-  &#scatter {
-    background: $scatter;
-  }
-
-  &#inu-chivu {
-    background: lighten($scatter, 2.5%);
-  }
-
-  &#smuff {
-    background: lighten($scatter, 0%);
+  &:nth-of-type(even) {
+    background: $gray2;
   }
 
 }
