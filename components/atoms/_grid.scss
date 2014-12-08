@@ -1,6 +1,10 @@
 @mixin grid {
   @include flex-item($flex-basis: 100%);
 
+  @include tablet {
+    @include flex-item($flex-basis: 50%);
+  }
+
   @include laptop-and-up {
     @include flex-item($flex-basis: 33.33%);
   }
