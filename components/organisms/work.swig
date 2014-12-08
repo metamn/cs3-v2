@@ -12,14 +12,5 @@
     {% include "../atoms/link.swig" %}
   </h3>
 
-  {{ f.figure(loop.index0, image.name) }}
-
-  {% set link = {
-    title: image.description,
-    url: image.url,
-    text: image.description
-  } %}
-  <p>
-    {% include "../atoms/link.swig" %}
-  </p>
+  {{ f.figure(loop.index0, image.description) }}
 </article>

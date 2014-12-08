@@ -1,0 +1,5 @@
+@mixin prepare-animation {
+  transition: -webkit-transform .3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform .3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  will-change: transform;
+}

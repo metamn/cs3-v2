@@ -7,15 +7,15 @@
   @include work-background;
   @include work-hover;
 
-  figure {
-    @include work-figure;
-  }
-
   h3 {
     @include work-title;
   }
 
-  p {
-    @include work-subtitle;
+  figure {
+    @include work-figure;
+
+    figcaption {
+      @include work-subtitle;
+    }
   }
 }

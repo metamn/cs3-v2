@@ -1,25 +1,18 @@
 @mixin work-hover {
-  h3 {
-    display: block;
+  h3, figure figcaption {
+    @include prepare-animation;
   }
-
-  p {
-    display: none;
-  }
-
-  @include transition-1;
-  will-change: transform;
 
   &:hover {
-    figure img {
-      @include transform-1(-1000em);
-    }
-
-    p {
-      display: block;
+    figure {
+      figcaption {
+        @include transform(scale(1));
+      }
     }
 
     h3 {
+      @include transform(rotate(0deg));
+
       a {
         @include link(red);
       }

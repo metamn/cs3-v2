@@ -1,5 +1,7 @@
 @mixin work-title {
   @include transform(rotate(-90deg));
+  margin-right: $lem;
+  display: block;
 
   a {
     @include font(navigation);

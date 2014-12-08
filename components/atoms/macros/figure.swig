@@ -21,7 +21,9 @@ params:
 
         <img src="/assets/images/{{ image.mobile }}" alt="{{ figcaption }}">
       </picture>
-      <figcaption>{{ figcaption }}</figcaption>
+      <figcaption>
+        {{ figcaption }}
+      </figcaption>
     {% if image.url %}</a>{% endif %}
   </figure>
 {%- endmacro %}

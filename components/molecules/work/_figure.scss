@@ -1,6 +1,15 @@
 @mixin work-figure {
-  img {
-    max-width: $text-width / 1.5;
-    max-height: $text-width / 1.5;
+  a {
+    @include link(invisible);
+
+    img {
+      max-width: $text-width / 1.5;
+      max-height: $text-width / 1.5;
+    }
+
+    figcaption {
+      display: flex;
+      @include transform(scale(0));
+    }
   }
 }
