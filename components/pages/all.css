@@ -40,15 +40,17 @@ body section#works article:nth-of-type(2n+2) { background: #ebebeb; }
   body section#works article:nth-of-type(4n+3) { background: #ebebeb; }
   body section#works article:nth-of-type(4n+4) { background: #f2f2f2; } }
 body section#works article figure img { max-width: 15.6em; max-height: 15.6em; }
-body section#works article h3 { display: block; text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; font-weight: 400; -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
-body section#works article p { text-transform: uppercase; letter-spacing: 1.1px; font-size: 1.6154em; font-weight: 400; max-width: 11.7em; display: none; }
+body section#works article h3 { display: block; -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+body section#works article h3 a { text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; font-weight: 400; color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
+body section#works article p { display: none; max-width: 11.7em; }
+body section#works article p a { text-transform: uppercase; letter-spacing: 1.1px; font-size: 1.6154em; font-weight: 400; color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
 body section#works article:hover figure img { display: none; }
 body section#works article:hover p { display: block; }
+body section#works article:hover h3 a { color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; }
+body section#works article:hover h3 a:before { content: '\2014'; display: inline-block; color: red; position: relative; top: -1px; }
 body section#menu { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; padding: 1.56em 1.56em 3.12em; }
-body section#menu nav#links { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
-body section#menu nav#links div { margin-right: 1.56em; }
-body section#menu nav#links div span.text { text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; font-weight: 400; }
-body section#menu nav#links div span.text:before { content: '\2014'; display: inline-block; margin-right: 0.39em; color: red; position: relative; top: -1px; }
+body section#menu nav a { text-transform: uppercase; letter-spacing: 1.1px; font-size: smaller; font-weight: 400; color: #1a1a1a; background-color: #f9f9f9; background: transparent; text-decoration: none; margin-right: 1.56em; }
+body section#menu nav a:before { content: '\2014'; display: inline-block; color: red; position: relative; top: -1px; }
 body section#portfolio-header { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 1.56em; background: #f2f2f2; }
 body section#portfolio-header article { padding-bottom: 1.56em; }
 body section#portfolio-header article#portfolio-title { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: 33.33%; -moz-flex-basis: 33.33%; -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; }

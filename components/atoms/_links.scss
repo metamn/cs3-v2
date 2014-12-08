@@ -5,4 +5,8 @@
   @if ($type == invisible ) {
     @include link-invisible;
   }
+
+  @if ($type == red ) {
+    @include link-red;
+  }
 }

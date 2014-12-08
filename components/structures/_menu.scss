@@ -3,8 +3,10 @@
   padding: $lem $lem $lem * 2;
 
   nav {
-    &#links {
-      @include links;
+    a {
+      @include font(navigation);
+      @include link(red);
+      margin-right: $lem;
     }
   }
 }

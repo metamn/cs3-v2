@@ -15,16 +15,22 @@
 
   h3 {
     display: block;
-
-    @include font(navigation);
     @include transform(rotate(-90deg));
+
+    a {
+      @include font(navigation);
+      @include link(invisible);
+    }
   }
 
   p {
-    @include font(portfolio-title);
+    display: none;
     max-width: $text-width / 2;
 
-    display: none;
+    a {
+      @include font(portfolio-title);
+      @include link(invisible);
+    }
   }
 
   &:hover {
@@ -34,6 +40,12 @@
 
     p {
       display: block;
+    }
+
+    h3 {
+      a {
+        @include link(red);
+      }
     }
   }
 }

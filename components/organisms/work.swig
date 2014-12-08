@@ -3,11 +3,23 @@
 {% set classname = c.classname(image.name) %}
 
 <article id="{{ classname }}" class="work">
-  <h3>{{ image.name }}</h3>
+  {% set link = {
+    title: image.name,
+    url: image.url,
+    text: image.name
+  } %}
+  <h3>
+    {% include "../atoms/link.swig" %}
+  </h3>
 
   {{ f.figure(loop.index0, image.name) }}
 
+  {% set link = {
+    title: image.description,
+    url: image.url,
+    text: image.description
+  } %}
   <p>
-    {{ image.description }}
+    {% include "../atoms/link.swig" %}
   </p>
 </article>

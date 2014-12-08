@@ -1,8 +1,8 @@
 {% import "../atoms/macros/classname.swig" as c  %}
-{% set classname = c.classname(title) %}
+{% set classname = c.classname(link.title) %}
 
-<a href="{{ url | default(site.url + '/' + classname)}}" title="{{ title }}">
+<a href="{{ link.url | default(site.url + '/' + classname)}}" title="{{ link.title }}">
   {% block link %}
-    {{ text | default(title) | safe }}
+    {{ text | default(link.title) | safe }}
   {% endblock %}
 </a>

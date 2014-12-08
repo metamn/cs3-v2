@@ -20,6 +20,6 @@
 <section id="menu">
   <h3>Menu</h3>
 
-  {% set icons = {title: "Links", icons: menu } %}
-  {% include "../molecules/icons.swig" %}
+  {% set links = { title: "Main menu", links: menu } %}
+  {% include "../molecules/links.swig" %}
 </section>

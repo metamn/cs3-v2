@@ -1,0 +1,5 @@
+@mixin dash($color: $black, $margin: $lem / 6) {
+  content: '\2014';
+  display: inline-block;
+  color: $color;
+}
