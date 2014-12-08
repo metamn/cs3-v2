@@ -36,16 +36,6 @@ images:
     tablet: smuff-filters-mobile-portrait-1x.png
     laptop: smuff-filters-mobile-portrait-1x.png
     desktop: smuff-filters-mobile-portrait-1x.png
-menu:
-  - title: About
-    url: about
-    text: About
-  - title: Contact
-    url: contact
-    text: Contact
-  - title: Styleguide
-    url: styleguide
-    text: Styleguide
 ---
 
 {% extends "../templates/portfolio.swig" %}

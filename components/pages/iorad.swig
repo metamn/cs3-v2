@@ -40,16 +40,6 @@ x:
     tablet: iorad-pricing-tablet-portrait-1x.png
     laptop: iorad-pricing-tablet-portrait-2x.png
     desktop: iorad-pricing-tablet-portrait-2x.png
-menu:
-  - title: About
-    url: about
-    text: About
-  - title: Contact
-    url: contact
-    text: Contact
-  - title: Styleguide
-    url: styleguide
-    text: Styleguide
 ---
 
 {% extends "../templates/portfolio.swig" %}

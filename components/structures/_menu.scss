@@ -1,5 +1,5 @@
 @mixin menu {
-  @include flexbox($wrap: wrap);
+  @include flexbox($wrap: nowrap);
   padding: $lem $lem $lem * 2;
 
   nav {

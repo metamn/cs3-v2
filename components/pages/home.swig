@@ -18,16 +18,6 @@ contact:
     glyph: tumblr
     url: http://metamn.tumblr.com
     text: inspiration
-menu:
-  - title: About
-    url: about
-    text: About
-  - title: Contact
-    url: contact
-    text: Contact
-  - title: Styleguide
-    url: styleguide
-    text: Styleguide
 images:
   - name: Iorad
     description: Pricing and checkout page design
