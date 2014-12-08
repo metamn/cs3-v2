@@ -8,6 +8,11 @@
     title: 'Contact',
     url: 'contact',
     text: 'Contact'
+  },
+  {
+    title: 'Styleguide',
+    url: 'styleguide',
+    text: 'Styleguide'
   }
   ]
 %}
