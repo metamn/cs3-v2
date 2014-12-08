@@ -16,12 +16,24 @@
   h3 {
     display: block;
 
-    @include font(portfolio-title);
-    font-size: small;
+    @include font(navigation);
     @include transform(rotate(-90deg));
   }
 
   p {
+    @include font(portfolio-title);
+    max-width: $text-width / 2;
+
     display: none;
+  }
+
+  &:hover {
+    figure img {
+      display: none;
+    }
+
+    p {
+      display: block;
+    }
   }
 }
