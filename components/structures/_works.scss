@@ -1,10 +1,6 @@
 @mixin works {
   @include flexbox($wrap: wrap);
 
-  @include laptop-and-up {
-    padding: 0 $lem;
-  }
-
   article {
     @include work;
   }
