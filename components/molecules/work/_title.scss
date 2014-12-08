@@ -1,0 +1,8 @@
+@mixin work-title {
+  @include transform(rotate(-90deg));
+
+  a {
+    @include font(navigation);
+    @include link(invisible);
+  }
+}

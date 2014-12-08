@@ -1,0 +1,8 @@
+@mixin work-subtitle {
+  max-width: $text-width / 2;
+  
+  a {
+    @include font(portfolio-title);
+    @include link(invisible);
+  }
+}

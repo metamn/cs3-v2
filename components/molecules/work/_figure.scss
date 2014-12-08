@@ -1,0 +1,6 @@
+@mixin work-figure {
+  img {
+    max-width: $text-width / 1.5;
+    max-height: $text-width / 1.5;
+  }
+}

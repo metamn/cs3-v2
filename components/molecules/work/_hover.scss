@@ -1,0 +1,28 @@
+@mixin work-hover {
+  h3 {
+    display: block;
+  }
+
+  p {
+    display: none;
+  }
+
+  @include transition-1;
+  will-change: transform;
+
+  &:hover {
+    figure img {
+      @include transform-1(-1000em);
+    }
+
+    p {
+      display: block;
+    }
+
+    h3 {
+      a {
+        @include link(red);
+      }
+    }
+  }
+}

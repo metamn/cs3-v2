@@ -5,47 +5,17 @@
   min-height: $text-width;
 
   @include work-background;
+  @include work-hover;
 
   figure {
-    img {
-      max-width: $text-width / 1.5;
-      max-height: $text-width / 1.5;
-    }
+    @include work-figure;
   }
 
   h3 {
-    display: block;
-    @include transform(rotate(-90deg));
-
-    a {
-      @include font(navigation);
-      @include link(invisible);
-    }
+    @include work-title;
   }
 
   p {
-    display: none;
-    max-width: $text-width / 2;
-
-    a {
-      @include font(portfolio-title);
-      @include link(invisible);
-    }
-  }
-
-  &:hover {
-    figure img {
-      display: none;
-    }
-
-    p {
-      display: block;
-    }
-
-    h3 {
-      a {
-        @include link(red);
-      }
-    }
+    @include work-subtitle;
   }
 }
