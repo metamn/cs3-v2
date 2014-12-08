@@ -1,8 +1,11 @@
 @mixin work {
   @include flexbox($justify-content: center, $align-items: center);
+
   @include grid;
   min-height: $text-width;
 
+  @include work-background;
+  
   figure {
     img {
       max-width: $text-width / 1.5;
@@ -12,14 +15,6 @@
 
   p {
     display: none;
-  }
-
-  &:nth-of-type(odd) {
-    background: $gray1;
-  }
-
-  &:nth-of-type(even) {
-    background: $gray2;
   }
 
 }
