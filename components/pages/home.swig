@@ -1,23 +1,5 @@
 ---
 title: Home
-contact:
-  - title: Send me an email
-    glyph: mail
-    type: email
-    email: bartus.csongor@gmail.com
-    text: "bartus.csongor@gmail.com"
-  - title: Contact via Twitter
-    glyph: twitter
-    url: http://twitter.com/metamn
-    text: "metamn"
-  - title: Code samples on Github
-    glyph: mark-github
-    url: http://github.com/metamn/its-csongor
-    text: code sample
-  - title: Inspiration on Tumblr
-    glyph: tumblr
-    url: http://metamn.tumblr.com
-    text: inspiration
 images:
   - name: Iorad
     description: Pricing and checkout page design
