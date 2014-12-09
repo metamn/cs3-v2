@@ -1,5 +1,6 @@
 @mixin card {
-  @include flexbox($wrap: wrap, $align-items: center);
+  @include flexbox($wrap: nowrap, $align-items: center);
+  padding: $lem;
 
   figure {
     margin-right: $lem;
@@ -11,13 +12,8 @@
         @include name;
       }
 
-      &.skills {
-        @include skills;
-      }
-
       &.location {
         @include location;
-        margin-bottom: $lem / 2;
       }
     }
   }

@@ -4,7 +4,7 @@
     {
       name: "Csongor Bartus",
       description: "User interface and experience designer",
-      mobile: "avatar-2x.png",
+      mobile: "avatar-3x.png",
       tablet: "avatar-3x.png",
       laptop: "avatar-4x.png",
       desktop: "avatar-4x.png"
@@ -15,7 +15,6 @@
 
 {% set info = {
   name: "Csongor Bartus",
-  skills: "UI - UX - RWD - CMS",
   location: "Budapest, Hungary, Europe"
 } %}
 
@@ -36,10 +35,5 @@
     <div class="location">
       {{ info.location }}
     </div>
-
-    <div class="skills">
-      {{ info.skills }}
-    </div>
-
   </aside>
 </article>

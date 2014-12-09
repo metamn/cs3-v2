@@ -1,12 +1,16 @@
 @mixin contact {
+  padding: $lem;
+  
   // Align to the card
-  margin-left: $lem;
-  padding-left: 128px;
+  @include laptop-and-up {
+    margin-left: $lem;
+    padding-left: 128px;
+  }
 
   div {
     margin-bottom: $lem / 4;
     @include font(navigation);
-    
+
     a {
       @include link(icon);
     }

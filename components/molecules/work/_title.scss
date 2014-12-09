@@ -7,4 +7,8 @@
     @include font(navigation);
     @include link(invisible);
   }
+
+  @include mobile {
+    display: none;
+  }
 }
