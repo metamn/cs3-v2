@@ -2,6 +2,8 @@
   @include flexbox($wrap: nowrap);
   padding: $lem $lem $lem * 2;
 
+  display: none;
+
   nav {
     a {
       @include font(navigation);

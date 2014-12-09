@@ -1,0 +1,7 @@
+@mixin main-menu {
+
+  a {
+    @include link(red);
+    margin-right: $lem;
+  }
+}
