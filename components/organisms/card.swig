@@ -15,7 +15,7 @@
 
 {% set info = {
   name: "Csongor Bartus",
-  skills: "UI / UX / RWD / CMS",
+  skills: "UI - UX - RWD - CMS",
   location: "Budapest, Hungary, Europe"
 } %}
 
@@ -33,12 +33,13 @@
       {{ info.name }}
     </div>
 
+    <div class="location">
+      {{ info.location }}
+    </div>
+
     <div class="skills">
       {{ info.skills }}
     </div>
 
-    <div class="location">
-      {{ info.location }}
-    </div>
   </aside>
 </article>

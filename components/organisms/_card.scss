@@ -7,8 +7,6 @@
 
   aside {
     div {
-      margin-bottom: $lem / 4;
-
       &.name {
         @include name;
       }
@@ -19,6 +17,7 @@
 
       &.location {
         @include location;
+        margin-bottom: $lem / 2;
       }
     }
   }
