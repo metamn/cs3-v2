@@ -1,8 +1,0 @@
-@mixin work-subtitle {
-  max-width: $text-width / 2;
-  margin-top: $lem;
-
-  @include mobile {
-    display: none;
-  }
-}

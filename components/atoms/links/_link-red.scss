@@ -1,9 +1,0 @@
-@mixin link-red {
-  @include link(invisible);
-
-  &:before {
-    @include dash($red);
-    position: relative;
-    top: -1px;
-  }
-}

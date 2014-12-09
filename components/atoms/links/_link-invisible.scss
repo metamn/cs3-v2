@@ -1,9 +1,0 @@
-// Link invisible
-// - a link without decorations
-// - it is used as the site name in the header, for example
-
-@mixin link-invisible {
-  @include colors;
-  background: transparent;
-  text-decoration: none;
-}

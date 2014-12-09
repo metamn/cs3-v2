@@ -1,7 +1,0 @@
-@mixin works {
-  @include flexbox($wrap: wrap);
-
-  article {
-    @include work;
-  }
-}
