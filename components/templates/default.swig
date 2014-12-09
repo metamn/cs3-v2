@@ -5,5 +5,5 @@
 
 {% block content %}{% endblock %}
 
-{% include "../structures/menu.swig" %}
+{% include "../structures/profile.swig" %}
 {% include "../structures/footer.swig" %}
