@@ -1,0 +1,11 @@
+@mixin card {
+  @include flexbox($wrap: wrap, $align-items: center);
+
+  figure {
+    margin-right: $lem;
+  }
+
+  aside {
+    @include personal-info;
+  }
+}
