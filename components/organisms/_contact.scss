@@ -1,0 +1,9 @@
+@mixin contact {
+  margin-top: $lem;
+
+  div {
+    a {
+      @include link(icon);
+    }
+  }
+}

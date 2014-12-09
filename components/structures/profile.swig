@@ -1,6 +1,7 @@
 <section id="profile">
   <h3>Profile</h3>
 
-  {% include "profile/card.swig" %}
+  {% include "../organisms/card.swig" %}
+  {% include "../organisms/contact.swig" %}
 
 </section>

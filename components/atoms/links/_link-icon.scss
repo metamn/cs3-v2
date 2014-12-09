@@ -1,0 +1,9 @@
+@mixin link-icon {
+  @include link(invisible);
+
+  span {
+    &.glyph {
+      color: $red;
+    }
+  }
+}

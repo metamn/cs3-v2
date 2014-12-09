@@ -9,4 +9,8 @@
   @if ($type == red ) {
     @include link-red;
   }
+
+  @if ($type == icon ) {
+    @include link-icon;
+  }
 }

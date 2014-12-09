@@ -1,0 +1,25 @@
+@mixin card {
+  @include flexbox($wrap: wrap, $align-items: center);
+
+  figure {
+    margin-right: $lem;
+  }
+
+  aside {
+    div {
+      margin-bottom: $lem / 4;
+
+      &.name {
+        @include name;
+      }
+
+      &.skills {
+        @include skills;
+      }
+
+      &.location {
+        @include location;
+      }
+    }
+  }
+}

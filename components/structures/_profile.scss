@@ -1,0 +1,9 @@
+@mixin profile {
+  #card {
+    @include card;
+  }
+
+  #contact {
+    @include contact;
+  }
+}
