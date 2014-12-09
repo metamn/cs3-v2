@@ -1,5 +1,8 @@
 @mixin work {
   @include flexbox($justify-content: center, $align-items: center);
+  @include mobile {
+    @include flexbox($direction: column);
+  }
 
   @include grid;
   min-height: $text-width;
@@ -16,21 +19,6 @@
 
     figcaption {
       @include work-subtitle;
-    }
-  }
-
-
-  @include mobile {
-    @include flexbox($direction: column);
-
-    h3 {
-      @include flex-item($order: 2);
-    }
-
-    figure {
-      figcaption {
-        display: none !important;
-      }
     }
   }
 }

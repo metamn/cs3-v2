@@ -4,6 +4,14 @@
   a {
     @include font(navigation);
     @include link(invisible);
+
+    @include mobile {
+      @include link(red);
+    }
+  }
+
+  @include mobile {
+    @include flex-item($order: 2);
   }
 
   @include laptop-and-up {
