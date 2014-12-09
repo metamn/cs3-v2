@@ -1,6 +1,4 @@
 @mixin work-title {
-  @include transform(rotate(-90deg));
-  margin-right: $lem;
   display: block;
 
   a {
@@ -8,7 +6,8 @@
     @include link(invisible);
   }
 
-  @include mobile {
-    display: none;
+  @include laptop-and-up {
+    @include transform(rotate(-90deg));
+    margin-right: $lem;
   }
 }

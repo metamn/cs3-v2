@@ -18,4 +18,19 @@
       @include work-subtitle;
     }
   }
+
+
+  @include mobile {
+    @include flexbox($direction: column);
+
+    h3 {
+      @include flex-item($order: 2);
+    }
+
+    figure {
+      figcaption {
+        display: none !important;
+      }
+    }
+  }
 }
