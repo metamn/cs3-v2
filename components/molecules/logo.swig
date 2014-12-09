@@ -1,6 +1,6 @@
 {% set link = {
   title: "It<span>'</span>s Csongor",
-  url: '/',
+  url: site.url,
   text: "It's Csongor"
 } %}
 
