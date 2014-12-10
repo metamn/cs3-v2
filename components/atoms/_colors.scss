@@ -16,6 +16,9 @@ $scatter: hsla(24, 65%, 84%, 1);
 $inu: darkgray;
 $smuff: hsla(317, 78%, 89%, 1);
 
+// For skills graph, from Kuler, based on the smuff pink
+$green: hsla(90, 91%, 77%, 1);
+
 // Color pairs
 // - colors don't come along but on a background
 @mixin colors($scheme: black-on-white) {

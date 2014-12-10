@@ -4,34 +4,34 @@
 
   .item {
     @include flexbox($wrap: nowrap, $justify-content: space-between);
-    margin-bottom: 1px;
+    padding: $lem/6 $lem/4;
 
     &.size-7 {
-      @include linear-gradient($iorad, 70%, 30%);
+      @include linear-gradient(70%);
     }
 
     &.size-6 {
-      @include linear-gradient($iorad, 60%, 40%);
+      @include linear-gradient(60%);
     }
 
     &.size-5 {
-      @include linear-gradient($iorad, 50%, 50%);
+      @include linear-gradient(50%);
     }
 
     &.size-4 {
-      @include linear-gradient($iorad, 40%, 60%);
+      @include linear-gradient(40%);
     }
 
     &.size-3 {
-      @include linear-gradient($iorad, 30%, 70%);
+      @include linear-gradient(30%);
     }
 
     &.size-2 {
-      @include linear-gradient($iorad, 20%, 80%);
+      @include linear-gradient(20%);
     }
 
     &.size-1 {
-      @include linear-gradient($iorad, 10%, 90%);
+      @include linear-gradient(10%);
     }
   }
 }

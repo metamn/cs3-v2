@@ -1,9 +1,7 @@
-@mixin linear-gradient($color1, $stop1, $stop2) {
-  //$stop2: calc(100% - #{$stop1});
-
+@mixin linear-gradient($stop) {
   background-image: linear-gradient(
     to right,
-    $color1 calc(100% - #{$stop2}),
+    $green $stop,
     $smuff
   );
 }
