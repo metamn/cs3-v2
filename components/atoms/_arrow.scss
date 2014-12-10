@@ -1,0 +1,4 @@
+@mixin arrow($direction) {
+  content: '\2192';
+  display: inline;
+}

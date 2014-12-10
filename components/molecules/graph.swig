@@ -1,8 +1,8 @@
 <div class="graph">
   {% for item in graph %}
-    <div class="item">
+    <div class="item" class="size-{{ item.years }}">
       <span class="title">{{ item.title }}</span>
-      <span class="years" data-size="{{ item.years }}">{{ item.years }} yrs</span>
+      <span class="years">{{ item.years }} yrs</span>
     </div>
   {% endfor %}
 </div>

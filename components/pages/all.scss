@@ -42,10 +42,15 @@ body {
 
     &#works {
       @include works;
+      display: none;
     }
 
     &#profile {
       @include profile;
+    }
+
+    &#skills {
+      @include skills;
     }
 
     &#portfolio-header {

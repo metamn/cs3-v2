@@ -6,4 +6,5 @@
   </div>
 
   {% include "../../molecules/graph.swig" with { graph: skill.graph } %}
+  {% include "../../atoms/link.swig" with { link: skill.link } %}
 </aside>

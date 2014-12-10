@@ -1,0 +1,22 @@
+@mixin skill {
+  nav {
+    @include circles;
+    display: none;
+  }
+
+  aside {
+    div {
+      &.description {
+        @include skill-description;
+      }
+
+      &.graph {
+        @include graph;
+      }
+    }
+  }
+
+  &#ux, &#rwd, &#cms {
+    display: none;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin skills {
+  padding: $lem;
+
+  .skill {
+    @include skill;
+  }
+}

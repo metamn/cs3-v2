@@ -1,0 +1,15 @@
+@mixin graph {
+  font-size: small;
+  padding: $lem 0;
+
+  .item {
+    @include flexbox($wrap: nowrap, $justify-content: space-between);
+    margin-bottom: 1px;
+    
+    background-image: linear-gradient(
+      to right,
+      lightblue 70%,
+      lightgray
+    );
+  }
+}

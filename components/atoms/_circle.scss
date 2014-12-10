@@ -1,0 +1,9 @@
+@mixin circle {
+  @include flexbox($justify-content: center, $align-items: center);
+
+  border: 1px solid;
+  @include border-radius(100%);
+
+  width: $lem * 2;
+  height: $lem * 2;
+}

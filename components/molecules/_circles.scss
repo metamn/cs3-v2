@@ -1,0 +1,7 @@
+@mixin circles {
+  @include flexbox($wrap: nowrap, $justify-content: space-between);
+
+  div {
+    @include circle;
+  }
+}
