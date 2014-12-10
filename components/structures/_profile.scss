@@ -1,4 +1,6 @@
 @mixin profile {
+  background: $gray1;
+
   #card {
     @include card;
   }

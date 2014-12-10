@@ -2,9 +2,12 @@
   <h3>Slide</h3>
 
   <div class="description">
-    {{ skill.description }}
+    {{ skill.description | safe }}
   </div>
 
   {% include "../../molecules/graph.swig" with { graph: skill.graph } %}
-  {% include "../../atoms/link.swig" with { link: skill.link } %}
+
+  <div class="button">
+    {% include "../../atoms/link.swig" with { link: skill.link } %}
+  </div>
 </aside>

@@ -4,10 +4,5 @@
   p {
     max-width: $text-width;
     @include font(about);
-
-    span {
-      color: $red;
-      font-style: italic;
-    }
   }
 }

@@ -1,3 +1,4 @@
 @mixin skill-description {
-  
+  max-width: $text-width;
+  @include font(about);
 }

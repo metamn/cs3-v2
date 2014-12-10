@@ -1,7 +1,7 @@
 {% set skills = [
     {
       title: "UI",
-      description: "I like to design simple and powerful user interfaces and write clean, well documented and reusable front-end code.",
+      description: "I like to design simple / powerful user interfaces <span>and</span> write clean, well documented, reusable front-end code.",
       graph: [
         {
           title: "HTML5, CSS3, jQuery",

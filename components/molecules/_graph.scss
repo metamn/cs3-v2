@@ -1,11 +1,11 @@
 @mixin graph {
-  font-size: small;
-  padding: $lem 0;
 
   .item {
     @include flexbox($wrap: nowrap, $justify-content: space-between);
-    padding: $lem/6 $lem/4;
+    padding: 0;
+  }
 
+  .bar {
     &.size-7 {
       @include linear-gradient(70%);
     }

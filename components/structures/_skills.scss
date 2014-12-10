@@ -1,5 +1,6 @@
 @mixin skills {
-  padding: 0 $lem;
+  background: $gray2;
+  padding: $lem;
 
   .skill {
     @include skill;

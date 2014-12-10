@@ -2,16 +2,30 @@
   nav {
     @include circles;
     font-size: small;
+    display: none;
   }
 
   aside {
+    @include flexbox($wrap: wrap, $justify-content: space-around, $align-items: center);
+
     div {
+      @include grid;
+      padding-bottom: $lem;
+
       &.description {
         @include skill-description;
       }
 
       &.graph {
         @include graph;
+
+        @include laptop-and-up {
+          @include flex-item($flex-basis: 50%);
+        }
+      }
+
+      &.button {
+
       }
     }
   }
