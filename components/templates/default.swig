@@ -6,4 +6,5 @@
 {% block content %}{% endblock %}
 
 {% include "../structures/profile.swig" %}
+{% include "../structures/skills.swig" %}
 {% include "../structures/footer.swig" %}

@@ -23,7 +23,12 @@
           title: "Styleguide",
           years: 1,
         }
-      ]
+      ],
+      link: {
+        title: "View code sample",
+        url: "http://github.com/metamn",
+        text: "View code sample"
+      }
     },
     {
       title: "UX",
@@ -36,7 +41,7 @@
     },
     {
       title: "RWD",
-      descriprion: "All devices are equal. Since 2010."
+      description: "All devices are equal. Since 2010."
     },
     {
       title: "CMS",
@@ -65,4 +70,8 @@
 
 <section id="skills">
   <h3>Skills</h3>
+
+  {% for skill in skills %}
+    {% include "../organisms/skill.swig" %}
+  {% endfor %}
 </section>
