@@ -1,5 +1,6 @@
 @mixin circles {
   @include flexbox($wrap: nowrap, $justify-content: space-between);
+  max-width: $text-width;
 
   div {
     @include circle;
