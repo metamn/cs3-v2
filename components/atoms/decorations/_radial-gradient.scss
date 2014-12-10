@@ -1,0 +1,8 @@
+@mixin radial-gradient($color1, $color2: $white) {
+  background-image:
+  radial-gradient(
+    circle closest-side,
+    $color1,
+    $color2
+  );
+}

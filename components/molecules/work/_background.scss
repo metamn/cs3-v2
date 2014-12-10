@@ -1,101 +1,26 @@
 @mixin work-background {
 
   &#iorad {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      hsl(144, 42%, 56%),
-      $white
-    );
+    @include radial-gradient($iorad);
   }
 
   &#occrp {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      hsl(181, 89%, 74%),
-      $white
-    );
+    @include radial-gradient($occrp);
   }
 
   &#anvelocom {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      hsla(17, 30%, 50%, .1),
-      $white
-    );
+    @include radial-gradient($anvelocom);
   }
 
   &#scatter {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      hsl(24, 65%, 84%),
-      $white
-    );
+    @include radial-gradient($scatter);
   }
 
   &#inu-chivu {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      darkgray,
-      $white
-    );
+    @include radial-gradient($inu);
   }
-
 
   &#smuff {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      hsl(317, 78%, 89%),
-      $white
-    );
-  }
-}
-
-
-
-
-
-
-@mixin work-background2 {
-  &:nth-of-type(2n+1) {
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      #F9E0F9,
-      $white
-    );
-  }
-
-  &:nth-of-type(2n+2) {
-    background-image:
-    radial-gradient(
-      circle at closets-side,
-      #F9E7E0,
-      $white
-    );
-  }
-
-
-  @include tablet {
-    &:nth-of-type(4n+1) {
-      background: $gray1;
-    }
-
-    &:nth-of-type(4n+2) {
-      background: $gray2;
-    }
-
-    &:nth-of-type(4n+3) {
-      background: $gray2;
-    }
-
-    &:nth-of-type(4n+4) {
-      background: $gray1;
-    }
+    @include radial-gradient($smuff);
   }
 }
