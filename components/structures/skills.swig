@@ -12,11 +12,11 @@
           years: 6,
         },
         {
-          title: "Semantic HTML",
-          years: 3,
+          title: "Responsive Web Design",
+          years: 4,
         },
         {
-          title: "Atomic Web Design",
+          title: "Atomic Web Components",
           years: 2,
         },
         {
