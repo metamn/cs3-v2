@@ -1,0 +1,68 @@
+{% set skills = [
+    {
+      title: "UI",
+      description: "I like to design simple and powerful user interfaces and write clean, well documented and reusable front-end code.",
+      graph: [
+        {
+          title: "HTML5, CSS3, jQuery",
+          years: 7,
+        },
+        {
+          title: "SASS / SCSS",
+          years: 6,
+        },
+        {
+          title: "Semantic HTML",
+          years: 3,
+        },
+        {
+          title: "Atomic Web Design",
+          years: 2,
+        },
+        {
+          title: "Styleguide",
+          years: 1,
+        }
+      ]
+    },
+    {
+      title: "UX",
+      description: "All my works are seeking the wholeness, that moment when the viewer becomes one with the message and feels the immediate urge to express satisfaction.",
+      link: {
+        title: "View case study",
+        url: "message",
+        text: "View case study"
+      }
+    },
+    {
+      title: "RWD",
+      descriprion: "All devices are equal. Since 2010."
+    },
+    {
+      title: "CMS",
+      description: "Better the content better the experience.",
+      graph: [
+        {
+          title: "Wordpress",
+          years: 7,
+        },
+        {
+          title: "Jekyll",
+          years: 7,
+        },
+        {
+          title: "MVC (Rails, Yii)",
+          years: 3,
+        },
+        {
+          title: "Gulp / Node.js",
+          years: 1
+        }
+      ]
+    }
+  ]
+%}
+
+<section id="skills">
+  <h3>Skills</h3>
+</section>
