@@ -41,11 +41,11 @@
     },
     {
       title: "RWD",
-      description: "All devices are equal. Since 2010."
+      description: "All devices are equal. I dedicate full attention for every screen and make the design feel native on all of them."
     },
     {
       title: "CMS",
-      description: "Better the content better the experience.",
+      description: "Content is everything. It drives design and makes the user experience. With prefect content comes perfect solution.",
       graph: [
         {
           title: "Wordpress",
