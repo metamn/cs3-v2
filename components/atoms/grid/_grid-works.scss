@@ -1,0 +1,11 @@
+@mixin grid-works($mobile: 100%, $tablet: 50%, $laptop: 33.33%) {
+  @include flex-item($flex-basis: $mobile);
+
+  @include tablet {
+    @include flex-item($flex-basis: $tablet);
+  }
+
+  @include laptop-and-up {
+    @include flex-item($flex-basis: $laptop);
+  }
+}

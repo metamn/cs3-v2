@@ -1,0 +1,9 @@
+@mixin grid-profile($column-type) {
+  @if ($column-type == small) {
+    @include grid-works(100%, 33.33%, 33.33%);
+  }
+
+  @if ($column-type == large) {
+    @include grid-works(100%, 50%, 50%);
+  }
+}

@@ -1,34 +1,26 @@
 @mixin skill {
-  nav {
-    @include circles;
-    font-size: small;
-    display: none;
-  }
+  @include flexbox($wrap: wrap, $justify-content: flex-start, $align-items: center);
 
-  aside {
-    @include flexbox($wrap: wrap, $justify-content: space-around, $align-items: center);
+  div {
+    padding-bottom: $lem;
 
-    div {
-      @include grid;
-      padding-bottom: $lem;
-
-      &.description {
+    &.description {
+      @include grid(profile, small);
+      p {
         @include skill-description;
       }
+    }
 
-      &.graph {
-        @include graph;
+    &.graph {
+      @include grid(profile, large);
+      @include graph;
+    }
 
-        @include laptop-and-up {
-          @include flex-item($flex-basis: 50%);
-        }
-      }
-
-      &.button {
-
-      }
+    &.button {
+      @include grid(profile, small);
     }
   }
+
 
   &#ux, &#rwd, &#cms {
     display: none;

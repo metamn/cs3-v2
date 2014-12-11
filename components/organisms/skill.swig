@@ -4,11 +4,15 @@
 <article id="{{ classname }}" class="skill">
   <h3>{{ skill.title }}</h3>
 
+  <div class="description">
+    <p>
+      {{ skill.description | safe }}
+    </p>
+  </div>
 
-  {% include "../molecules/circles.swig" with { title: skill.title, circles: skills } %}
+  {% include "../molecules/graph.swig" with { graph: skill.graph } %}
 
-  {% if skill.title == "UI" %}{% include "skills/ui.swig" %}{% endif %}
-  {% if skill.title == "UX" %}{% include "skills/ux.swig" %}{% endif %}
-  {% if skill.title == "RWD" %}{% include "skills/rwd.swig" %}{% endif %}
-  {% if skill.title == "CMS" %}{% include "skills/cms.swig" %}{% endif %}
+  <div class="button">
+    {% include "../atoms/link.swig" with { link: skill.link } %}
+  </div>
 </article>

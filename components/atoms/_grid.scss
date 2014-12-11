@@ -1,11 +1,9 @@
-@mixin grid {
-  @include flex-item($flex-basis: 100%);
-
-  @include tablet {
-    @include flex-item($flex-basis: 50%);
+@mixin grid($type, $column-type: null) {
+  @if ($type == 'works') {
+    @include grid-works;
   }
 
-  @include laptop-and-up {
-    @include flex-item($flex-basis: 33.33%);
+  @if ($type == 'profile') {
+    @include grid-profile($column-type);
   }
 }

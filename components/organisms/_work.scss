@@ -4,7 +4,7 @@
     @include flexbox($direction: column);
   }
 
-  @include grid;
+  @include grid(works);
   min-height: $text-width;
 
   @include work-background;

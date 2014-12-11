@@ -1,4 +1,7 @@
-<nav class="circles">
+{% import "../atoms/macros/classname.swig" as c %}
+{% set classname = c.classname(title) %}
+
+<nav id="{{ classname }}">
   <h3>{{ title }}</h3>
 
   {% for circle in circles %}
