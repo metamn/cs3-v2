@@ -19,5 +19,6 @@
 
   {% include "../organisms/card.swig" %}
   {% include "../molecules/circles.swig" with { title: "Skillset", circles: skills } %}
+  {% include "../atoms/decorations/sine-wave/sine-wave.swig" %}
 
 </section>

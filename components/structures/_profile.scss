@@ -11,4 +11,8 @@
     @include grid(profile, large);
     @include circles;
   }
+
+  #sine-wave {
+    @include sine-wave;
+  }
 }

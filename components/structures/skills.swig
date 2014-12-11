@@ -41,7 +41,7 @@
     },
     {
       title: "RWD",
-      description: "All devices are equal. I dedicate full attention for every screen and make the design feel native on all of them."
+      description: "All devices are equal. Always dedicate full attention for every screen and make the design feel native on all of them."
     },
     {
       title: "CMS",
